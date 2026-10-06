@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/tokens/colors.css">
+<link rel="stylesheet" href="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/tokens/typography.css">
+<link rel="stylesheet" href="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/components/interactions.css">
+<link rel="stylesheet" href="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/styles.css">
+<script src="_ds/sale-platform-design-system-9edb5d68-72fc-4019-b831-af78b40a99f2/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; background: #F3F7FC; }
+  a { color: var(--brand-normal); text-decoration: none; }
+  a:hover { color: var(--brand-hover); text-decoration: underline; }
+  [contenteditable]:focus { outline: none; }
+  @keyframes est-spin { to { transform: rotate(360deg); } }
+</style>
+</helmet>
+
+<div style="height:100vh;overflow:hidden;display:flex;flex-direction:column;font-family:var(--font-sans);color:var(--text-body);font-size:14px;background:#F3F7FC;">
+
+  <div style="height:48px;flex:none;background:var(--brand-normal);display:flex;align-items:center;gap:20px;padding:0 20px;color:#fff;">
+    <div style="display:flex;align-items:center;gap:10px;width:170px;flex:none;">
+      <svg width="30" height="18" viewBox="0 0 30 18" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="8" cy="9" r="6"></circle><circle cx="21" cy="9" r="6"></circle></svg>
+      <div style="font-size:12px;font-weight:700;line-height:1.15;letter-spacing:.04em;">SALE<br>PLATFORM</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.85);">
+      <span>Cấu hình hệ thống</span><span style="opacity:.6;">›</span>
+      <span>Chiến dịch</span><span style="opacity:.6;">›</span>
+      <span>Mega Push Campaign</span><span style="opacity:.6;">›</span>
+      <span style="color:rgba(255,255,255,.6);">Thêm mới chiến dịch</span>
+    </div>
+    <div style="flex:1;"></div>
+    <div style="display:flex;align-items:center;gap:18px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M15 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="3.5"></circle><path d="M19 8v6M22 11h-6"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"></path></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"></path></svg>
+      <div style="position:relative;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M18 9a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7"></path><path d="M10.5 20a2 2 0 0 0 3 0"></path></svg>
+        <span style="position:absolute;top:-6px;right:-10px;background:var(--status-danger);border-radius:999px;font-size:10px;font-weight:600;padding:1px 5px;">99+</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border-radius:6px;padding:6px 12px;font-size:13px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><circle cx="9" cy="8" r="3.4"></circle><path d="M3 20v-1.5A4.5 4.5 0 0 1 7.5 14h3"></path></svg>
+        Đang trực tuyến
+        <span style="width:7px;height:7px;border-radius:50%;background:#5DE28A;"></span>
+        <span style="opacity:.8;">⌄</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:13px;">
+        <span style="width:26px;height:26px;border-radius:50%;background:#F2A93B;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:12px;">H</span>
+        Do Thi Ha <span style="opacity:.8;">⌄</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex:1;display:flex;min-height:0;">
+
+    <sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+    <div style="width:224px;flex:none;background:#fff;border-right:1px solid var(--border-subtle);display:flex;flex-direction:column;padding:12px 0;overflow:auto;">
+      <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="8">
+        <div class="sp-nav-item" style="{{ item.style }}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ item.d }}"></path></svg>
+          <span style="flex:1;">{{ item.label }}</span>
+          <sc-if value="{{ item.caret }}" hint-placeholder-val="{{ false }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </sc-if>
+        </div>
+      </sc-for>
+      <div style="flex:1;"></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 20px;color:var(--text-body);">
+        <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Switch" checked="{{ false }}" size="sm" hint-size="36px,20px"></x-import>
+        <span>Trang quản trị</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 20px;color:var(--text-body);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.6 9.2a2.5 2.5 0 1 1 3.4 2.4c-.7.3-1 .9-1 1.6M12 16.6h.01"></path></svg>
+        <span>Hướng dẫn sử dụng</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 20px;color:var(--text-body);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h10M4 17h16"></path></svg>
+        <span>Thu gọn</span>
+      </div>
+    </div>
+    </sc-if>
+
+    <div style="flex:1;min-width:0;min-height:0;display:flex;flex-direction:column;">
+
+      <div style="flex:none;background:#fff;padding:16px 24px 0;border-bottom:1px solid var(--border-subtle);">
+        <div style="display:flex;align-items:center;gap:8px;font-size:18px;font-weight:600;color:var(--text-strong);">
+          <span style="color:var(--slate-500);">‹</span> Chiến dịch
+        </div>
+        <div style="display:flex;gap:28px;margin-top:14px;">
+          <sc-for list="{{ pageTabs }}" as="tab" hint-placeholder-count="5">
+            <div style="{{ tab.style }}">{{ tab.label }}</div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="flex:none;background:#fff;padding:16px 24px 0;">
+        <div style="display:flex;align-items:center;">
+          <div style="display:flex;align-items:center;gap:8px;font-size:18px;font-weight:600;color:var(--text-strong);flex:1;">
+            <span style="color:var(--slate-500);">‹</span> Thêm chiến dịch
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--brand-normal);font-weight:500;">Kích hoạt</span>
+            <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Switch" checked="{{ active }}" on-change="{{ toggleActive }}" hint-size="44px,24px"></x-import>
+          </div>
+        </div>
+        <div style="display:flex;margin:16px 0 0;padding-bottom:16px;">
+          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+            <div style="{{ s.style }}" onClick="{{ s.go }}">
+              <span style="{{ s.badge }}">
+                <sc-if value="{{ s.done }}" hint-placeholder-val="{{ false }}">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4.5 4.5L19 7"></path></svg>
+                </sc-if>
+                <sc-if value="{{ s.showNum }}" hint-placeholder-val="{{ true }}">{{ s.n }}</sc-if>
+              </span>
+              <span>{{ s.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="flex:1;min-height:0;padding:24px;overflow:auto;">
+
+        <sc-if value="{{ isStep1 }}" hint-placeholder-val="{{ true }}">
+          <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:28px 24px;min-height:100%;box-sizing:border-box;">
+            <div style="max-width:1120px;display:flex;flex-direction:column;gap:22px;">
+              <div>
+                <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Tên chiến dịch</div>
+                <input placeholder="Nhập tên chiến dịch" value="{{ name }}" onChange="{{ setName }}" style="width:100%;height:45px;box-sizing:border-box;padding:0 12px;border:1px solid var(--border-default);border-radius:4px;font-family:var(--font-sans);font-size:14px;color:var(--text-body);">
+              </div>
+              <div>
+                <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Kênh</div>
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+                  <sc-for list="{{ channels }}" as="c" hint-placeholder-count="4">
+                    <div style="{{ c.style }}" onClick="{{ c.pick }}">
+                      <span style="width:22px;height:22px;border-radius:50%;background:{{ c.dot }};display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:9px;font-weight:700;">{{ c.mark }}</span>
+                      <span style="{{ c.labelStyle }}">{{ c.label }}</span>
+                      <sc-if value="{{ c.selected }}" hint-placeholder-val="{{ false }}">
+                        <span style="position:absolute;top:-9px;right:-9px;width:20px;height:20px;border-radius:50%;background:var(--brand-normal);display:inline-flex;align-items:center;justify-content:center;">
+                          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4.5 4.5L19 7"></path></svg>
+                        </span>
+                      </sc-if>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <div>
+                <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Trang</div>
+                <div style="min-height:45px;border:1px solid var(--border-default);border-radius:4px;padding:7px 10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+                  <sc-for list="{{ pages }}" as="p" hint-placeholder-count="5">
+                    <span style="display:inline-flex;align-items:center;gap:8px;background:var(--neutral-2);border-radius:4px;padding:4px 8px;font-size:13px;">
+                      <span style="width:16px;height:16px;border-radius:3px;background:{{ p.color }};"></span>
+                      {{ p.label }}
+                      <span onClick="{{ p.remove }}" style="cursor:pointer;color:var(--slate-400);">✕</span>
+                    </span>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isStep2 }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:16px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;padding:8px 8px 0;align-items:stretch;">
+              <sc-for list="{{ sources }}" as="s" hint-placeholder-count="5">
+                <div style="{{ s.style }}" onClick="{{ s.pick }}">
+                  <div style="display:flex;gap:10px;">
+                    <span style="{{ s.iconStyle }}">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ s.d }}"></path></svg>
+                    </span>
+                    <div style="flex:1;min-width:0;">
+                      <div style="display:flex;align-items:center;gap:8px;font-weight:600;color:var(--text-strong);">{{ s.title }}
+                        <sc-if value="{{ s.isNew }}" hint-placeholder-val="{{ false }}">
+                          <span style="background:var(--status-success-bg);color:var(--status-success);font-size:11px;font-weight:600;border-radius:4px;padding:1px 6px;">Mới</span>
+                        </sc-if>
+                      </div>
+                      <div style="color:var(--text-secondary);font-size:12px;margin-top:3px;">{{ s.desc }}</div>
+                    </div>
+                  </div>
+                  
+                  <sc-if value="{{ s.selected }}" hint-placeholder-val="{{ false }}">
+                    <span style="position:absolute;top:-7px;right:-7px;width:20px;height:20px;border-radius:50%;background:var(--brand-normal);display:inline-flex;align-items:center;justify-content:center;">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4.5 4.5L19 7"></path></svg>
+                    </span>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+
+            <div>
+              <div style="border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                <div style="font-weight:600;color:var(--text-strong);margin-bottom:14px;">Thiết lập nguồn: <span style="color:var(--brand-normal);">{{ sourceTitle }}</span></div>
+
+                <sc-if value="{{ isLead }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:flex;flex-direction:column;gap:10px;">
+                    <sc-for list="{{ leadModes }}" as="m" hint-placeholder-count="2">
+                      <div style="{{ m.style }}" onClick="{{ m.pick }}">
+                        <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Radio" checked="{{ m.selected }}" on-change="{{ m.pick }}" hint-size="18px,18px"></x-import>
+                        <div>
+                          <div style="font-weight:500;color:var(--text-strong);">{{ m.label }}</div>
+                          <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">{{ m.desc }}</div>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+
+                  <sc-if value="{{ showFilter }}" hint-placeholder-val="{{ false }}">
+                    <div style="font-size:13px;color:var(--text-secondary);margin:16px 0 8px;">Bộ lọc ({{ conditionCount }} điều kiện)</div>
+                  </sc-if>
+
+                  <sc-if value="{{ showFilter }}" hint-placeholder-val="{{ false }}">
+                    <div style="border:1px solid var(--border-default);border-radius:8px;background:var(--neutral-1);">
+                      <div style="display:flex;align-items:center;gap:24px;padding:12px 16px;border-bottom:1px solid var(--border-subtle);">
+                        <span onClick="{{ setMatchAny }}" style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;">
+                          <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Radio" checked="{{ matchAny }}" on-change="{{ setMatchAny }}" hint-size="18px,18px"></x-import>
+                          <span>Thỏa mãn <b>BẤT KỲ</b> điều kiện</span>
+                        </span>
+                        <span onClick="{{ setMatchAll }}" style="display:inline-flex;align-items:center;gap:8px;cursor:pointer;">
+                          <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Radio" checked="{{ matchAll }}" on-change="{{ setMatchAll }}" hint-size="18px,18px"></x-import>
+                          <span>Thỏa mãn <b>TẤT CẢ</b> điều kiện</span>
+                        </span>
+                        <div style="flex:1;"></div>
+                        <span onClick="{{ resetConditions }}" style="color:var(--brand-normal);font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4h-4"></path></svg>
+                          Reset toàn bộ điều kiện
+                        </span>
+                      </div>
+                      <div style="padding:12px 16px;display:flex;flex-direction:column;gap:0;">
+                        <sc-for list="{{ conditions }}" as="c" hint-placeholder-count="3">
+                          <div>
+                            <sc-if value="{{ c.showJoin }}" hint-placeholder-val="{{ false }}">
+                              <div style="display:flex;justify-content:center;padding:6px 0;">
+                                <span style="border:1px solid var(--border-default);background:#fff;border-radius:999px;font-size:12px;font-weight:600;color:var(--slate-500);padding:3px 12px;">{{ joinWord }}</span>
+                              </div>
+                            </sc-if>
+                            <div style="display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:12px;">
+                              <div style="width:170px;flex:none;">
+                                <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ fieldOptions }}" value="{{ c.field }}" on-change="{{ c.setField }}" hint-size="100%,45px"></x-import>
+                              </div>
+                              <sc-if value="{{ c.hasSub }}" hint-placeholder-val="{{ false }}">
+                                <div style="width:150px;flex:none;">
+                                  <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ c.subOptions }}" value="{{ c.sub }}" on-change="{{ c.setSub }}" hint-size="100%,45px"></x-import>
+                                </div>
+                              </sc-if>
+                              <div style="flex:1;min-height:45px;background:#fff;border:1px solid var(--border-default);border-radius:4px;padding:7px 10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+                                <sc-for list="{{ c.values }}" as="v" hint-placeholder-count="2">
+                                  <span style="{{ v.style }}">{{ v.label }} <span onClick="{{ v.remove }}" style="cursor:pointer;opacity:.55;">✕</span></span>
+                                </sc-for>
+                                <sc-for list="{{ c.suggestions }}" as="sg" hint-placeholder-count="2">
+                                  <span onClick="{{ sg.add }}" style="display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--border-default);color:var(--text-secondary);border-radius:4px;padding:3px 9px;font-size:13px;cursor:pointer;">+ {{ sg.label }}</span>
+                                </sc-for>
+                              </div>
+                              <span onClick="{{ c.remove }}" style="cursor:pointer;color:var(--slate-400);flex:none;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"></circle><path d="M8 12h8"></path></svg>
+                              </span>
+                            </div>
+                          </div>
+                        </sc-for>
+                        <div onClick="{{ addCondition }}" style="margin-top:12px;display:inline-flex;align-items:center;gap:8px;color:var(--brand-normal);font-weight:500;cursor:pointer;">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>
+                          Thêm điều kiện
+                        </div>
+                      </div>
+                    </div>
+                  </sc-if>
+                </sc-if>
+
+                <sc-if value="{{ isPaste }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:13px;color:var(--text-secondary);margin-bottom:10px;">Số điện thoại phải có độ dài từ 8–12 chữ số, bắt đầu bằng 0, 84 hoặc +84. Nhập hoặc dán trực tiếp — mỗi số nhận diện xong sẽ thành một chip.</div>
+                  <div onClick="{{ focusPhoneInput }}" style="min-height:130px;max-height:230px;overflow:auto;background:#fff;border:1px solid var(--border-default);border-radius:4px;padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;cursor:text;">
+                    <sc-for list="{{ phoneChips }}" as="p" hint-placeholder-count="5">
+                      <span style="{{ p.style }}">
+                        <sc-if value="{{ p.invalidIcon }}" hint-placeholder-val="{{ false }}">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 4 2.5 20h19z"></path><path d="M12 10v4M12 17h.01"></path></svg>
+                        </sc-if>
+                        <sc-if value="{{ p.isRed }}" hint-placeholder-val="{{ false }}">
+                          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M12.1604 12.3195V5.11951C12.1604 4.89951 12.082 4.71125 11.9252 4.55471C11.7684 4.39818 11.5801 4.31978 11.3604 4.31951H4.96039C4.74039 4.31951 4.55199 4.39791 4.39519 4.55471C4.23839 4.71151 4.16012 4.89978 4.16039 5.11951V9.91951C4.16039 10.1395 4.23866 10.3279 4.39519 10.4847C4.55172 10.6415 4.74012 10.7198 4.96039 10.7195H10.5604L12.1604 12.3195ZM10.5604 8.71951H7.36039V7.91951H10.5604V8.71951ZM9.56039 6.71951H5.76039V5.91951H9.56039V6.71951Z" fill="black"></path><path d="M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM1.6 8C1.6 4.464 4.464 1.6 8 1.6C9.48 1.6 10.84 2.104 11.92 2.952L2.952 11.92C2.07341 10.8025 1.59711 9.42151 1.6 8ZM8 14.4C6.52 14.4 5.16 13.896 4.08 13.048L13.048 4.08C13.9266 5.19749 14.4029 6.57849 14.4 8C14.4 11.536 11.536 14.4 8 14.4Z" fill="#E2181A"></path></svg>
+                        </sc-if>
+                        <sc-if value="{{ p.isFail }}" hint-placeholder-val="{{ false }}">
+                          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#FFA127"></circle><path d="M11.2002 4C11.4198 4.00031 11.6079 4.07886 11.7646 4.23535C11.9214 4.39184 12 4.57989 12 4.7998V12L10.4004 10.4004H4.79981C4.57962 10.4006 4.39086 10.3218 4.23438 10.165C4.07804 10.0083 4 9.81947 4 9.59961V4.7998C3.99978 4.58029 4.07781 4.39205 4.23438 4.23535C4.39113 4.0786 4.57989 4.00005 4.79981 4H11.2002ZM8 8C7.90128 8 7.80479 8.02923 7.72266 8.08398C7.64045 8.13891 7.57593 8.21726 7.53809 8.30859C7.50024 8.39996 7.49047 8.50067 7.50977 8.59766C7.52908 8.69459 7.57659 8.78362 7.64648 8.85352C7.71638 8.92341 7.80541 8.97092 7.90234 8.99023C7.99933 9.00953 8.10004 8.99976 8.19141 8.96191C8.28274 8.92407 8.36109 8.85955 8.41602 8.77734C8.47077 8.69521 8.5 8.59872 8.5 8.5C8.5 8.36739 8.44728 8.24025 8.35352 8.14648C8.25975 8.05272 8.13261 8 8 8ZM8 5C7.86739 5 7.74025 5.05272 7.64648 5.14648C7.55272 5.24025 7.5 5.36739 7.5 5.5V7C7.5 7.13261 7.55272 7.25975 7.64648 7.35352C7.74025 7.44728 7.86739 7.5 8 7.5C8.13261 7.5 8.25975 7.44728 8.35352 7.35352C8.44728 7.25975 8.5 7.13261 8.5 7V5.5C8.5 5.36739 8.44728 5.24025 8.35352 5.14648C8.25975 5.05272 8.13261 5 8 5Z" fill="white"></path></svg>
+                        </sc-if>
+                        {{ p.value }}
+                        <span onClick="{{ p.remove }}" style="cursor:pointer;opacity:.6;">✕</span>
+                      </span>
+                    </sc-for>
+                    <input ref="{{ phoneInputRef }}" value="{{ phoneDraft }}" onChange="{{ setPhoneDraft }}" onKeyDown="{{ phoneKeyDown }}" onPaste="{{ phonePaste }}" onBlur="{{ commitPhoneDraft }}" placeholder="{{ phonePlaceholder }}" style="flex:1;min-width:180px;height:28px;border:none;outline:none;font-family:var(--font-sans);font-size:14px;color:var(--text-body);background:transparent;">
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px;margin-top:6px;font-size:12px;color:var(--text-secondary);">
+                    <span>Enter, dấu phẩy hoặc dấu cách để tách số • Backspace để xóa chip cuối</span>
+                    <span style="flex:1;"></span>
+                    <span>{{ phoneCount }}/10.000 số</span>
+                  </div>
+                  <sc-if value="{{ hasInvalidOrDns }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:8px;color:var(--status-danger);font-size:13px;">{{ invalidOrDnsCount }} số điện thoại không đúng định dạng/thuộc danh sách DNS. <span onClick="{{ removeInvalidAndRedDns }}" style="text-decoration:underline;cursor:pointer;font-weight:500;">Loại bỏ tất cả</span></div>
+                  </sc-if>
+                  <sc-if value="{{ hasYellowDns }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:6px;color:var(--status-warning-strong, #92400E);font-size:13px;">{{ dnsYellowCount }} số thuộc nhóm nguy cơ thất bại cao — nên loại trừ để tăng tỉ lệ thành công. <span onClick="{{ removeYellowDns }}" style="text-decoration:underline;cursor:pointer;font-weight:500;">Loại bỏ</span></div>
+                  </sc-if>
+                </sc-if>
+
+                <sc-if value="{{ isUpload }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;">File Excel, CSV, TXT. File tải lên phải chứa trường bắt buộc “Số điện thoại”. <a href="#">Tải file mẫu</a></div>
+                  <div style="border:1px dashed var(--brand-normal);border-radius:8px;background:var(--brand-1);padding:26px;text-align:center;">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--brand-normal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-8 6 6 0 0 1 11.4 1.5A3.5 3.5 0 0 1 17.5 18"></path><path d="M12 20v-8m-3 3 3-3 3 3"></path></svg>
+                    <div style="margin-top:8px;color:var(--text-body);">Kéo thả file vào đây</div>
+                    <div style="color:var(--text-secondary);font-size:12px;margin:6px 0;">hoặc</div>
+                    <span onClick="{{ addFile }}" style="color:var(--brand-normal);font-weight:600;cursor:pointer;">Chọn file tải lên</span>
+                    <div style="color:var(--text-secondary);font-size:12px;margin-top:10px;">Dữ liệu sẽ được kiểm tra sau khi tải lên.</div>
+                  </div>
+                  <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px;">
+                    <sc-for list="{{ files }}" as="f" hint-placeholder-count="2">
+                      <div style="display:flex;align-items:center;gap:10px;background:var(--neutral-1);border-radius:6px;padding:10px 12px;">
+                        <span style="width:24px;height:24px;border-radius:4px;background:var(--status-success);color:#fff;font-size:9px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;">XLS</span>
+                        <span style="flex:1;">{{ f.name }}</span>
+                        <span onClick="{{ f.remove }}" style="cursor:pointer;color:var(--status-danger);">
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"></path></svg>
+                        </span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+
+                <sc-if value="{{ isFmi }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;">Chọn tập khách hàng mà bạn đã tạo thành công từ FMI.</div>
+                  <div style="max-width:340px;">
+                    <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Tập dữ liệu</div>
+                    <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ fmiOptions }}" value="{{ fmiSet }}" placeholder="Vui lòng chọn" on-change="{{ setFmiSet }}" hint-size="100%,45px"></x-import>
+                  </div>
+                  <div style="display:flex;align-items:center;margin:18px 0 8px;">
+                    <span style="flex:1;font-weight:500;">Tỷ lệ phân phối theo tài khoản</span>
+                    <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Button" variant="text" size="sm" on-click="{{ splitEvenly }}" hint-size="90px,32px">Chia đều</x-import>
+                  </div>
+                  <div style="border:1px solid var(--border-subtle);border-radius:6px;overflow:hidden;">
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;background:var(--neutral-1);padding:10px 14px;font-size:12px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.03em;">
+                      <span>Tài khoản Zalo</span><span>Tỷ lệ</span><span>Số lượng SĐT</span>
+                    </div>
+                    <sc-for list="{{ distribution }}" as="row" hint-placeholder-count="3">
+                      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--border-subtle);">
+                        <span style="display:inline-flex;align-items:center;gap:8px;color:var(--brand-normal);">
+                          <span style="width:22px;height:22px;border-radius:50%;background:{{ row.color }};"></span>{{ row.name }}
+                        </span>
+                        <span style="display:inline-flex;align-items:center;gap:8px;">
+                          <input value="{{ row.pct }}" onChange="{{ row.setPct }}" style="width:88px;height:32px;box-sizing:border-box;padding:0 10px;border:1px solid var(--border-default);border-radius:4px;font-family:var(--font-sans);font-size:14px;">
+                          <span style="color:var(--text-secondary);">%</span>
+                        </span>
+                        <input value="{{ row.qty }}" onChange="{{ row.setQty }}" style="width:120px;height:32px;box-sizing:border-box;padding:0 10px;border:1px solid var(--border-default);border-radius:4px;font-family:var(--font-sans);font-size:14px;">
+                      </div>
+                    </sc-for>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px;padding:10px 14px;border-top:1px solid var(--border-default);background:var(--neutral-1);font-weight:600;color:var(--text-strong);">
+                      <span>Tổng</span>
+                      <span style="{{ fmiTotalStyle }}">{{ fmiTotalPct }}</span>
+                      <span>{{ fmiTotalQty }}</span>
+                    </div>
+                  </div>
+                  <sc-if value="{{ fmiUnbalanced }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin-top:8px;color:var(--status-warning);font-size:13px;">Tổng tỷ lệ phải bằng 100%. <span onClick="{{ splitEvenly }}" style="text-decoration:underline;cursor:pointer;font-weight:500;">Chia đều</span></div>
+                  </sc-if>
+                </sc-if>
+
+                <sc-if value="{{ isRetry }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size:13px;color:var(--text-secondary);margin-bottom:12px;">Chọn chiến dịch và nhóm lỗi để gửi lại cho những khách hàng đã gửi thất bại.</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                    <div>
+                      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Chọn chiến dịch <span style="color:var(--status-danger);">*</span></div>
+                      <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ campaignOptions }}" value="{{ retryCampaign }}" placeholder="Vui lòng chọn chiến dịch" on-change="{{ setRetryCampaign }}" hint-size="100%,45px"></x-import>
+                    </div>
+                    <div>
+                      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Nhóm lỗi <span style="color:var(--status-danger);">*</span></div>
+                      <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ errorGroupOptions }}" value="{{ retryGroup }}" placeholder="Chọn nhóm lỗi" on-change="{{ setRetryGroup }}" hint-size="100%,45px"></x-import>
+                    </div>
+                    <div>
+                      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Lỗi cụ thể (không bắt buộc)</div>
+                      <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ errorOptions }}" value="{{ retryError }}" on-change="{{ setRetryError }}" hint-size="100%,45px"></x-import>
+                    </div>
+                    <div>
+                      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Khoảng thời gian <span style="color:var(--status-danger);">*</span></div>
+                      <div style="height:45px;border:1px solid var(--border-default);border-radius:4px;display:flex;align-items:center;gap:10px;padding:0 12px;">
+                        <span>01/01/2025</span><span style="color:var(--slate-400);">→</span><span>30/06/2025</span>
+                        <span style="flex:1;"></span>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--slate-400)" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                </sc-if>
+              </div>
+
+            </div>
+
+            <sc-if value="{{ canExclude }}" hint-placeholder-val="{{ true }}">
+              <div style="border:1px solid var(--border-subtle);border-radius:8px;padding:20px 22px;">
+                <div style="font-weight:600;color:var(--text-strong);font-size:15px;">Loại trừ nâng cao</div>
+                <div style="display:flex;flex-direction:column;gap:22px;margin-top:16px;">
+                  <sc-for list="{{ dnsGroups }}" as="g" hint-placeholder-count="2">
+                    <div>
+                      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                        <sc-if value="{{ g.isRed }}" hint-placeholder-val="{{ true }}">
+                          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M12.1604 12.3195V5.11951C12.1604 4.89951 12.082 4.71125 11.9252 4.55471C11.7684 4.39818 11.5801 4.31978 11.3604 4.31951H4.96039C4.74039 4.31951 4.55199 4.39791 4.39519 4.55471C4.23839 4.71151 4.16012 4.89978 4.16039 5.11951V9.91951C4.16039 10.1395 4.23866 10.3279 4.39519 10.4847C4.55172 10.6415 4.74012 10.7198 4.96039 10.7195H10.5604L12.1604 12.3195ZM10.5604 8.71951H7.36039V7.91951H10.5604V8.71951ZM9.56039 6.71951H5.76039V5.91951H9.56039V6.71951Z" fill="black"></path><path d="M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM1.6 8C1.6 4.464 4.464 1.6 8 1.6C9.48 1.6 10.84 2.104 11.92 2.952L2.952 11.92C2.07341 10.8025 1.59711 9.42151 1.6 8ZM8 14.4C6.52 14.4 5.16 13.896 4.08 13.048L13.048 4.08C13.9266 5.19749 14.4029 6.57849 14.4 8C14.4 11.536 11.536 14.4 8 14.4Z" fill="#E2181A"></path></svg>
+                        </sc-if>
+                        <sc-if value="{{ g.isFail }}" hint-placeholder-val="{{ false }}">
+                          <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#FFA127"></circle><path d="M11.2002 4C11.4198 4.00031 11.6079 4.07886 11.7646 4.23535C11.9214 4.39184 12 4.57989 12 4.7998V12L10.4004 10.4004H4.79981C4.57962 10.4006 4.39086 10.3218 4.23438 10.165C4.07804 10.0083 4 9.81947 4 9.59961V4.7998C3.99978 4.58029 4.07781 4.39205 4.23438 4.23535C4.39113 4.0786 4.57989 4.00005 4.79981 4H11.2002ZM8 8C7.90128 8 7.80479 8.02923 7.72266 8.08398C7.64045 8.13891 7.57593 8.21726 7.53809 8.30859C7.50024 8.39996 7.49047 8.50067 7.50977 8.59766C7.52908 8.69459 7.57659 8.78362 7.64648 8.85352C7.71638 8.92341 7.80541 8.97092 7.90234 8.99023C7.99933 9.00953 8.10004 8.99976 8.19141 8.96191C8.28274 8.92407 8.36109 8.85955 8.41602 8.77734C8.47077 8.69521 8.5 8.59872 8.5 8.5C8.5 8.36739 8.44728 8.24025 8.35352 8.14648C8.25975 8.05272 8.13261 8 8 8ZM8 5C7.86739 5 7.74025 5.05272 7.64648 5.14648C7.55272 5.24025 7.5 5.36739 7.5 5.5V7C7.5 7.13261 7.55272 7.25975 7.64648 7.35352C7.74025 7.44728 7.86739 7.5 8 7.5C8.13261 7.5 8.25975 7.44728 8.35352 7.35352C8.44728 7.25975 8.5 7.13261 8.5 7V5.5C8.5 5.36739 8.44728 5.24025 8.35352 5.14648C8.25975 5.05272 8.13261 5 8 5Z" fill="white"></path></svg>
+                        </sc-if>
+                        <span style="font-weight:600;color:{{ g.titleColor }};">{{ g.titleFull }}</span>
+                        <span style="font-size:13px;color:var(--text-secondary);">{{ g.note }}</span>
+                      </div>
+                      <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;padding-left:26px;">
+                        <sc-for list="{{ g.reasons }}" as="r" hint-placeholder-count="3">
+                          <div style="{{ r.rowStyle }}" onClick="{{ r.toggle }}">
+                            <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Checkbox" checked="{{ r.checked }}" disabled="{{ r.disabled }}" on-change="{{ r.toggle }}" hint-size="18px,18px"></x-import>
+                            <span style="flex:1;font-size:13px;line-height:1.5;color:var(--text-body);">{{ r.text }}</span>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+                
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isStep3 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px;align-items:stretch;height:100%;">
+
+            <div style="display:flex;flex-direction:column;gap:16px;min-width:0;">
+              <div style="background:var(--brand-1);border:1px solid var(--brand-3);border-radius:8px;padding:14px 16px;display:flex;gap:12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-normal)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 4 10.5V16H8v-2.5A6 6 0 0 1 12 3z"></path></svg>
+                <div>
+                  <div style="font-weight:600;color:var(--text-strong);">Mẹo</div>
+                  <div style="margin-top:4px;line-height:1.6;">Bôi đen thông tin quan trọng (%, số tiền, ngày tháng, link,…) rồi bấm “Khóa từ” — AI sẽ giữ nguyên. Các trường động không cần khóa vì mặc định đã cá nhân hóa theo từng khách hàng.</div>
+                </div>
+              </div>
+
+              <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                <div style="font-weight:600;color:var(--text-strong);margin-bottom:10px;">Nội dung tin nhắn gốc</div>
+                <div style="border:1px solid var(--border-default);border-radius:6px;padding:14px 16px 10px;">
+                  <div contenteditable="true" ref="{{ editorRef }}" onInput="{{ onEditorInput }}" onClick="{{ onEditorClick }}" style="min-height:120px;font-size:14px;line-height:2;color:var(--text-body);"></div>
+                  <div style="display:flex;align-items:center;gap:8px;margin-top:10px;">
+                    <span onClick="{{ undo }}" style="cursor:pointer;color:var(--slate-500);display:inline-flex;padding:6px;">
+                      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h10a5 5 0 1 1 0 10h-3M4 9l4-4M4 9l4 4"></path></svg>
+                    </span>
+                    <span onClick="{{ redo }}" style="cursor:pointer;color:var(--slate-500);display:inline-flex;padding:6px;">
+                      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9H10a5 5 0 1 0 0 10h3M20 9l-4-4M20 9l-4 4"></path></svg>
+                    </span>
+                    <span onMouseDown="{{ keepSelection }}" onClick="{{ lockSelection }}" style="{{ lockBtnStyle }}">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10.5" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+                      <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ false }}">Khóa từ</sc-if>
+                    </span>
+                    <span style="font-size:12px;color:var(--text-secondary);">{{ lockHint }}</span>
+                    <span style="flex:1;"></span>
+                    <span style="color:var(--slate-400);cursor:pointer;">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"></circle><path d="M9 10h.01M15 10h.01M8.5 14.5a4.5 4.5 0 0 0 7 0"></path></svg>
+                    </span>
+                  </div>
+                  <div style="text-align:right;font-size:12px;color:var(--text-secondary);">{{ charCount }}/2000</div>
+                </div>
+
+                <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
+                  <sc-for list="{{ varChips }}" as="v" hint-placeholder-count="6">
+                    <span onClick="{{ v.insert }}" style="background:var(--brand-1);color:var(--brand-normal);border-radius:6px;padding:7px 12px;font-size:13px;font-weight:500;cursor:pointer;">{{ v.label }}</span>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                <div style="font-weight:600;color:var(--text-strong);margin-bottom:12px;">Số lượng biến thể muốn tạo</div>
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+                  <sc-for list="{{ variantOptions }}" as="o" hint-placeholder-count="4">
+                    <div style="{{ o.style }}" onClick="{{ o.pick }}">
+                      <div style="display:flex;gap:8px;">
+                        <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Radio" checked="{{ o.selected }}" on-change="{{ o.pick }}" hint-size="18px,18px"></x-import>
+                        <div>
+                          <div style="font-weight:600;color:var(--text-strong);line-height:1.35;">{{ o.title }}</div>
+                          <sc-if value="{{ o.recommended }}" hint-placeholder-val="{{ false }}">
+                            <span style="display:inline-block;margin-top:5px;background:var(--status-success-bg);color:var(--status-success);font-size:11px;font-weight:600;border-radius:4px;padding:1px 6px;">Khuyến nghị</span>
+                          </sc-if>
+                        </div>
+                      </div>
+                      <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:10px;">{{ o.desc }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                <div onClick="{{ toggleAdvanced }}" style="display:flex;align-items:center;cursor:pointer;">
+                  <span style="flex:1;font-weight:600;color:var(--text-strong);">Tùy chọn nâng cao</span>
+                  <span style="{{ advCaretStyle }}">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--slate-500)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                  </span>
+                </div>
+                <sc-if value="{{ advOpen }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px;">
+                    <div>
+                      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Phong cách</div>
+                      <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ styleOptions }}" value="{{ styleValue }}" on-change="{{ setStyleValue }}" hint-size="100%,45px"></x-import>
+                      <div style="font-size:12px;color:var(--text-secondary);margin-top:6px;">Cách diễn đạt và trình bày nội dung.</div>
+                    </div>
+                    <div>
+                      <div style="font-size:13px;color:var(--text-secondary);margin-bottom:6px;">Giọng điệu</div>
+                      <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ toneOptions }}" value="{{ toneValue }}" on-change="{{ setToneValue }}" hint-size="100%,45px"></x-import>
+                      <div style="font-size:12px;color:var(--text-secondary);margin-top:6px;">Cảm xúc và thái độ trong lời nói.</div>
+                    </div>
+                  </div>
+                </sc-if>
+                <div style="margin-top:18px;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--border-subtle);padding-top:16px;">
+                  <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Switch" checked="{{ autoFriend }}" on-change="{{ toggleAutoFriend }}" hint-size="44px,24px"></x-import>
+                    <div>
+                      <div style="font-weight:500;color:var(--text-strong);">Tự động kết bạn</div>
+                      <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Tự động gửi lời mời kết bạn sau khi gửi tin nhắn thành công.</div>
+                    </div>
+                  </div>
+                  <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Switch" checked="{{ autoTag }}" on-change="{{ toggleAutoTag }}" hint-size="44px,24px"></x-import>
+                    <div>
+                      <div style="font-weight:500;color:var(--text-strong);">Tự động gắn nhãn</div>
+                      <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Tự động gắn nhãn cho khách hàng sau khi gửi thành công, giúp phân loại dễ dàng.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;display:flex;flex-direction:column;position:sticky;top:0;min-height:0;max-height:100%;">
+              <div style="display:flex;align-items:center;gap:12px;padding:16px;border-bottom:1px solid var(--border-subtle);">
+                <div style="flex:1;font-weight:600;color:var(--text-strong);font-size:16px;">Xem trước biến thể ({{ variantTotal }})</div>
+                <sc-if value="{{ showPreview }}" hint-placeholder-val="{{ true }}">
+                  <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Button" variant="lined" size="sm" on-click="{{ regenerate }}" hint-size="110px,32px">↻ Tạo lại</x-import>
+                </sc-if>
+              </div>
+              <sc-if value="{{ hidePreview }}" hint-placeholder-val="{{ false }}">
+                <div style="flex:1;padding:28px 24px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;">
+                  <span style="width:44px;height:44px;border-radius:10px;background:var(--status-warning-bg);color:var(--status-warning);display:inline-flex;align-items:center;justify-content:center;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"></path><path d="M4 4l16 16"></path></svg>
+                  </span>
+                  <div style="font-weight:600;color:var(--status-warning-strong);">Không hiển thị xem trước</div>
+                  <div style="font-size:13px;color:var(--text-secondary);line-height:1.6;max-width:360px;">Bạn đang chọn <b>Tạo biến thể tới từng khách hàng</b> — số lượng nội dung bằng số khách hàng nên hệ thống không thể hiển thị và kiểm duyệt hết preview. Hãy cân nhắc kỹ trước khi gửi.</div>
+                </div>
+              </sc-if>
+              <div style="{{ previewListStyle }}">
+                <sc-for list="{{ variants }}" as="v" hint-placeholder-count="5">
+                  <div style="display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border-subtle);">
+                    <span style="{{ v.badgeStyle }}">{{ v.n }}</span>
+                    <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:8px;">
+                      <sc-for list="{{ v.lines }}" as="line" hint-placeholder-count="3">
+                        <div style="font-size:14px;line-height:1.9;">
+                          <sc-for list="{{ line.segs }}" as="seg" hint-placeholder-count="3">
+                            <span style="{{ seg.style }}">{{ seg.t }}<sc-if value="{{ seg.isLock }}" hint-placeholder-val="{{ false }}"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10.5" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></sc-if></span>
+                          </sc-for>
+                        </div>
+                      </sc-for>
+                    </div>
+                    <div style="width:104px;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:10px;">
+                      <span style="color:var(--status-success);font-size:12px;text-align:right;line-height:1.4;">~ {{ v.diff }}%<br>khác biệt</span>
+                      <span style="display:flex;gap:8px;">
+                        <span style="width:30px;height:30px;border:1px solid var(--border-default);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;color:var(--slate-500);cursor:pointer;">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4l10-10-4-4L4 16z"></path></svg>
+                        </span>
+                        <span style="width:30px;height:30px;border:1px solid var(--border-default);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;color:var(--slate-500);cursor:pointer;">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.7"></circle><circle cx="12" cy="12" r="1.7"></circle><circle cx="12" cy="19" r="1.7"></circle></svg>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="{{ legendStyle }}">
+                <span style="display:inline-flex;align-items:center;gap:8px;"><span style="width:14px;height:14px;border-radius:3px;background:#DCFCE7;"></span>Đã thay đổi</span>
+                <span style="display:inline-flex;align-items:center;gap:8px;"><span style="width:14px;height:14px;border-radius:3px;background:#FEE2E2;"></span>Đã thay đổi (khác nhiều)</span>
+                <span style="display:inline-flex;align-items:center;gap:8px;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10.5" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+                  Nội dung đã khóa (AI không thay đổi)
+                </span>
+                <span style="display:inline-flex;align-items:center;gap:8px;"><span style="width:14px;height:14px;border-radius:3px;background:var(--brand-1);border:1px solid var(--brand-3);"></span>Trường động — cá nhân hóa theo từng khách hàng</span>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isStep4 }}" hint-placeholder-val="{{ false }}">
+          <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:24px;min-height:100%;box-sizing:border-box;">
+            <div style="background:var(--status-warning-bg);border-left:4px solid var(--status-warning);border-radius:6px;padding:16px 18px;display:flex;gap:12px;line-height:1.7;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--status-warning)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px;"><path d="M12 4 2.5 20h19z"></path><path d="M12 10v4M12 17h.01"></path></svg>
+              <div>Gửi tin với tần suất cao hoặc vượt quá số lượng cho phép có thể bị Zalo đánh dấu spam, hạn chế, hoặc khóa tài khoản. Để đảm bảo an toàn cho chiến dịch và tài khoản của bạn, vui lòng thiết lập tần suất và gói gửi tin phù hợp.</div>
+            </div>
+
+            <div style="margin-top:24px;font-weight:500;"><span style="color:var(--status-danger);">*</span> Hạn mức số điện thoại/ngày</div>
+            <div style="display:flex;gap:36px;margin-top:12px;">
+              <sc-for list="{{ limitOptions }}" as="o" hint-placeholder-count="6">
+                <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Radio" checked="{{ o.selected }}" label="{{ o.label }}" on-change="{{ o.pick }}" hint-size="auto,20px"></x-import>
+              </sc-for>
+            </div>
+
+            <div style="margin-top:24px;font-weight:500;"><span style="color:var(--status-danger);">*</span> Khoảng thời gian gửi ra giữa 2 số điện thoại liên tiếp</div>
+            <div style="display:flex;gap:12px;margin-top:12px;">
+              <input value="{{ interval }}" onChange="{{ setInterval }}" style="width:102px;height:45px;box-sizing:border-box;padding:0 12px;border:1px solid var(--border-default);border-radius:4px;font-family:var(--font-sans);font-size:14px;color:var(--text-body);">
+              <div style="width:120px;">
+                <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ intervalUnits }}" value="{{ intervalUnit }}" on-change="{{ setIntervalUnit }}" hint-size="100%,45px"></x-import>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;font-weight:500;"><span style="color:var(--status-danger);">*</span> Thời gian được phép gửi trong ngày</div>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:12px;flex-wrap:wrap;">
+              <div style="width:132px;">
+                <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ hourOptions }}" value="{{ windowFrom }}" on-change="{{ setWindowFrom }}" hint-size="100%,45px"></x-import>
+              </div>
+              <span style="color:var(--slate-400);">→</span>
+              <div style="width:132px;">
+                <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ hourOptions }}" value="{{ windowTo }}" on-change="{{ setWindowTo }}" hint-size="100%,45px"></x-import>
+              </div>
+              <span onClick="{{ resetWindow }}" style="color:var(--brand-normal);font-weight:500;cursor:pointer;font-size:13px;">Về mặc định 08:00 – 20:00</span>
+            </div>
+            <div style="{{ windowNoteStyle }}">{{ windowNote }}</div>
+            <div style="margin-top:10px;height:34px;border-radius:8px;background:var(--neutral-2);position:relative;overflow:hidden;max-width:720px;">
+              <div style="{{ allowedBandStyle }}"></div>
+              <div style="{{ windowBarStyle }}"></div>
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:11px;color:var(--text-secondary);pointer-events:none;">
+                <span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span>
+              </div>
+            </div>
+
+            <div style="margin-top:24px;font-weight:500;"><span style="color:var(--status-danger);">*</span> Lịch trình</div>
+            <div style="display:flex;flex-direction:column;gap:14px;margin-top:12px;max-width:860px;">
+              <sc-for list="{{ scheduleOptions }}" as="o" hint-placeholder-count="4">
+                <div>
+                  <span onClick="{{ o.pick }}" style="display:inline-flex;align-items:center;gap:10px;cursor:pointer;">
+                    <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Radio" checked="{{ o.selected }}" on-change="{{ o.pick }}" hint-size="18px,18px"></x-import>
+                    <span>{{ o.label }}</span>
+                  </span>
+
+                  <sc-if value="{{ o.isBirthday }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin:10px 0 4px 28px;background:var(--neutral-1);border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                      <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Tùy chọn gửi</div>
+                      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;">
+                        <div style="width:280px;">
+                          <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ birthdayModes }}" value="{{ birthdayMode }}" on-change="{{ setBirthdayMode }}" hint-size="100%,45px"></x-import>
+                        </div>
+                        <sc-if value="{{ birthdayNeedsOffset }}" hint-placeholder-val="{{ true }}">
+                          <span style="display:inline-flex;align-items:center;gap:10px;">
+                            <span style="display:inline-flex;height:45px;border:1px solid var(--border-default);border-radius:4px;background:#fff;overflow:hidden;">
+                              <input value="{{ birthdayOffset }}" onChange="{{ setBirthdayOffset }}" style="width:132px;border:none;outline:none;padding:0 12px;font-family:var(--font-sans);font-size:14px;color:var(--text-body);">
+                              <span style="width:34px;display:flex;flex-direction:column;border-left:1px solid var(--border-default);">
+                                <span onClick="{{ incOffset }}" style="flex:1;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--slate-400);border-bottom:1px solid var(--border-default);">
+                                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"></path></svg>
+                                </span>
+                                <span onClick="{{ decOffset }}" style="flex:1;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--slate-400);">
+                                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+                                </span>
+                              </span>
+                            </span>
+                            <span style="color:var(--text-body);">Ngày</span>
+                          </span>
+                        </sc-if>
+                      </div>
+                    </div>
+                  </sc-if>
+
+                  <sc-if value="{{ o.isOnce }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin:10px 0 4px 28px;background:var(--neutral-1);border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                      <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Ngày</div>
+                      <div style="position:relative;width:320px;">
+                        <div onClick="{{ toggleCalendar }}" style="{{ dateFieldStyle }}">
+                          <span style="{{ dateTextStyle }}">{{ onceDateLabel }}</span>
+                          <span style="flex:1;"></span>
+                          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--slate-400)" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>
+                        </div>
+                        <sc-if value="{{ calendarOpen }}" hint-placeholder-val="{{ false }}">
+                          <div style="position:absolute;z-index:40;top:52px;left:0;width:320px;background:#fff;border-radius:8px;box-shadow:var(--shadow-md);border:1px solid var(--border-subtle);">
+                            <div style="display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--border-subtle);">
+                              <span onClick="{{ prevYear }}" style="cursor:pointer;color:var(--slate-400);">«</span>
+                              <span onClick="{{ prevMonth }}" style="cursor:pointer;color:var(--slate-400);">‹</span>
+                              <span style="flex:1;text-align:center;font-weight:500;color:var(--text-strong);">{{ calendarTitle }}</span>
+                              <span onClick="{{ nextMonth }}" style="cursor:pointer;color:var(--slate-400);">›</span>
+                              <span onClick="{{ nextYear }}" style="cursor:pointer;color:var(--slate-400);">»</span>
+                            </div>
+                            <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:10px 12px 4px;">
+                              <sc-for list="{{ dowLabels }}" as="d" hint-placeholder-count="7">
+                                <span style="height:30px;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text-body);">{{ d.label }}</span>
+                              </sc-for>
+                            </div>
+                            <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:0 12px 10px;">
+                              <sc-for list="{{ calendarDays }}" as="d" hint-placeholder-count="35">
+                                <span style="{{ d.style }}" onClick="{{ d.pick }}">{{ d.n }}</span>
+                              </sc-for>
+                            </div>
+                            <div style="display:flex;align-items:center;padding:10px 14px;border-top:1px solid var(--border-subtle);">
+                              <span onClick="{{ pickToday }}" style="color:var(--brand-normal);cursor:pointer;font-weight:500;">Hôm nay</span>
+                              <span style="flex:1;"></span>
+                              <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Button" variant="primary" size="sm" on-click="{{ confirmDate }}" hint-size="56px,32px">OK</x-import>
+                            </div>
+                          </div>
+                        </sc-if>
+                      </div>
+                    </div>
+                  </sc-if>
+
+                  <sc-if value="{{ o.isRepeat }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin:10px 0 4px 28px;background:var(--neutral-1);border:1px solid var(--border-subtle);border-radius:8px;padding:16px;display:grid;grid-template-columns:1fr 1.2fr;gap:16px;align-items:start;">
+                      <div>
+                        <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Tần suất</div>
+                        <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ freqOptions }}" value="{{ freq }}" on-change="{{ setFreq }}" hint-size="100%,45px"></x-import>
+                      </div>
+                      <sc-if value="{{ freqHasPicker }}" hint-placeholder-val="{{ true }}">
+                        <div style="position:relative;">
+                          <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> {{ freqPickerLabel }}</div>
+                          <div onClick="{{ toggleUnitPicker }}" style="{{ unitFieldStyle }}">
+                            <sc-for list="{{ selectedUnits }}" as="u" hint-placeholder-count="5">
+                              <span style="display:inline-flex;align-items:center;gap:6px;background:var(--neutral-2);border-radius:4px;padding:3px 8px;font-size:13px;">
+                                {{ u.short }}
+                                <span onClick="{{ u.remove }}" style="cursor:pointer;color:var(--slate-400);">✕</span>
+                              </span>
+                            </sc-for>
+                            <sc-if value="{{ noUnitSelected }}" hint-placeholder-val="{{ false }}">
+                              <span style="color:var(--text-secondary);">{{ unitPlaceholder }}</span>
+                            </sc-if>
+                          </div>
+                          <sc-if value="{{ unitPickerOpen }}" hint-placeholder-val="{{ false }}">
+                            <div style="position:absolute;z-index:40;top:78px;left:0;right:0;background:#fff;border-radius:8px;border:1px solid var(--border-subtle);box-shadow:var(--shadow-md);">
+                              <div onClick="{{ toggleAllUnits }}" style="display:flex;align-items:center;gap:12px;padding:12px 14px;cursor:pointer;">
+                                <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Checkbox" checked="{{ allUnitsChecked }}" indeterminate="{{ someUnitsChecked }}" on-change="{{ toggleAllUnits }}" hint-size="18px,18px"></x-import>
+                                <span style="font-weight:500;color:var(--text-strong);">Chọn tất cả</span>
+                              </div>
+                              <div style="max-height:250px;overflow:auto;padding:0 0 6px;">
+                                <sc-for list="{{ unitOptions }}" as="u" hint-placeholder-count="7">
+                                  <div onClick="{{ u.toggle }}" style="{{ u.rowStyle }}">
+                                    <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Checkbox" checked="{{ u.on }}" on-change="{{ u.toggle }}" hint-size="18px,18px"></x-import>
+                                    <span>{{ u.label }}</span>
+                                  </div>
+                                </sc-for>
+                              </div>
+                              <div style="padding:10px 14px;border-top:1px solid var(--border-subtle);font-size:13px;color:var(--text-secondary);">Đã chọn: {{ selectedUnitCount }}</div>
+                            </div>
+                          </sc-if>
+                        </div>
+                      </sc-if>
+                    </div>
+                  </sc-if>
+
+                  <sc-if value="{{ o.isRange }}" hint-placeholder-val="{{ false }}">
+                    <div style="margin:10px 0 4px 28px;background:var(--neutral-1);border:1px solid var(--border-subtle);border-radius:8px;padding:16px;">
+                      <div style="font-weight:500;margin-bottom:8px;"><span style="color:var(--status-danger);">*</span> Thời gian</div>
+                      <div style="height:45px;background:#fff;border:1px solid var(--border-default);border-radius:4px;display:flex;align-items:center;gap:12px;padding:0 12px;width:620px;max-width:100%;box-sizing:border-box;">
+                        <input value="{{ rangeFrom }}" onChange="{{ setRangeFrom }}" placeholder="Ngày bắt đầu" style="flex:1;min-width:0;border:none;outline:none;font-family:var(--font-sans);font-size:14px;color:var(--text-body);">
+                        <span style="color:var(--slate-400);">→</span>
+                        <input value="{{ rangeTo }}" onChange="{{ setRangeTo }}" placeholder="Ngày kết thúc" style="flex:1;min-width:0;border:none;outline:none;font-family:var(--font-sans);font-size:14px;color:var(--text-body);">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--slate-400)" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>
+                      </div>
+                      <div style="font-weight:500;margin:16px 0 8px;">Lặp lại</div>
+                      <div style="display:flex;gap:16px;width:620px;max-width:100%;box-sizing:border-box;">
+                        <input value="{{ repeatEvery }}" onChange="{{ setRepeatEvery }}" placeholder="Nhập số" style="flex:1;min-width:0;height:45px;box-sizing:border-box;padding:0 12px;border:1px solid var(--border-default);border-radius:4px;background:#fff;font-family:var(--font-sans);font-size:14px;color:var(--text-body);">
+                        <div style="flex:1;">
+                          <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Select" options="{{ repeatUnits }}" value="{{ repeatUnit }}" on-change="{{ setRepeatUnit }}" hint-size="100%,45px"></x-import>
+                        </div>
+                      </div>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+        <div style="{{ toastStyle }}">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10.5" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+          {{ toastMsg }}
+        </div>
+      </sc-if>
+
+      <div style="flex:none;background:#F3F7FC;padding:14px 24px 0;">
+        <div style="{{ estBarStyle }}">
+          <div style="flex:1;min-width:0;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+            <sc-if value="{{ estIdle }}" hint-placeholder-val="{{ true }}">
+              <span style="color:var(--text-secondary);line-height:1.55;">Bấm "Xem ước tính" để xem số lượng đối tượng nhận, dự kiến loại trừ và dự kiến gửi trước khi tiếp tục.</span>
+            </sc-if>
+            <sc-if value="{{ estError }}" hint-placeholder-val="{{ false }}">
+              <span style="color:var(--status-danger);font-weight:500;">Không thể tính ước tính, vui lòng thử lại.</span>
+            </sc-if>
+            <sc-if value="{{ estLoading }}" hint-placeholder-val="{{ false }}">
+              <span style="font-weight:700;color:var(--text-strong);">Dự kiến</span>
+              <span style="width:96px;height:14px;border-radius:7px;background:var(--neutral-2);"></span>
+              <span style="color:var(--slate-400);">—</span>
+              <span style="width:96px;height:14px;border-radius:7px;background:var(--neutral-2);"></span>
+              <span style="color:var(--slate-400);">—</span>
+              <span style="width:96px;height:14px;border-radius:7px;background:var(--neutral-2);"></span>
+            </sc-if>
+            <sc-if value="{{ estShowMetrics }}" hint-placeholder-val="{{ false }}">
+              <span style="font-weight:700;color:var(--text-strong);">Dự kiến</span>
+              <sc-if value="{{ estShowInfo }}" hint-placeholder-val="{{ true }}">
+                <span title="{{ estTooltip }}" style="width:17px;height:17px;flex:none;border-radius:50%;border:1px solid var(--slate-400);color:var(--slate-500);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-style:italic;font-weight:600;cursor:help;">i</span>
+              </sc-if>
+              <sc-if value="{{ estStale }}" hint-placeholder-val="{{ false }}">
+                <span title="Cấu hình đã thay đổi, bấm &quot;Làm mới&quot; để cập nhật số liệu." style="display:inline-flex;align-items:center;gap:5px;border:1px solid #FCD34D;color:var(--status-warning);background:#FFFBEB;font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;cursor:help;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4h-4"></path></svg>
+                  Cần cập nhật
+                </span>
+              </sc-if>
+              <span style="display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                <sc-for list="{{ estMetrics }}" as="m" hint-placeholder-count="3">
+                  <sc-if value="{{ m.key }}" hint-placeholder-val="{{ false }}"><span style="color:var(--slate-400);">—</span></sc-if>
+                  <span style="{{ m.labelStyle }}">{{ m.label }} <span style="{{ m.valueStyle }}">{{ m.value }}</span></span>
+                </sc-for>
+              </span>
+            </sc-if>
+          </div>
+          <button onClick="{{ runEstimate }}" disabled="{{ estBtn.disabled }}" style="{{ estBtn.style }}">
+            <sc-if value="{{ estBtn.spinner }}" hint-placeholder-val="{{ false }}">
+              <span style="width:15px;height:15px;border:2px solid var(--slate-400);border-top-color:transparent;border-radius:50%;display:inline-block;animation:est-spin .7s linear infinite;"></span>
+            </sc-if>
+            {{ estBtn.label }}
+          </button>
+        </div>
+        <sc-if value="{{ estWarning }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:8px;background:#FFFBEB;border:1px solid #FDE68A;border-radius:8px;padding:11px 16px;display:flex;align-items:center;gap:10px;color:var(--status-warning);line-height:1.5;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>
+            <span>Toàn bộ dữ liệu dự kiến bị loại trừ. Bạn vẫn có thể tiếp tục, nhưng chiến dịch sẽ không gửi được số nào.</span>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="flex:none;background:#fff;border-top:1px solid var(--border-subtle);padding:14px 24px;display:flex;align-items:center;">
+        <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Button" variant="secondary" on-click="{{ back }}" hint-size="100px,45px">Quay lại</x-import>
+        <span style="flex:1;"></span>
+        <x-import component-from-global-scope="SalePlatformDesignSystem_9edb5d.Button" variant="primary" on-click="{{ next }}" hint-size="110px,45px">{{ nextLabel }}</x-import>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:940},&quot;initialStep&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:1,&quot;min&quot;:1,&quot;max&quot;:4,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Luồng&quot;},&quot;showRail&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Luồng&quot;},&quot;estState&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;idle&quot;,&quot;options&quot;:[&quot;idle&quot;,&quot;loading&quot;,&quot;result&quot;,&quot;stale&quot;,&quot;zero&quot;,&quot;error&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Thanh ước tính&quot;},&quot;lockTint&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#FEF3C7&quot;,&quot;options&quot;:[&quot;#FEF3C7&quot;,&quot;#DBEAFE&quot;,&quot;#EDE9FE&quot;,&quot;#DCFCE7&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Nội dung&quot;}}">
+const LOCK_SVG = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:4px;"><rect x="4.5" y="10" width="15" height="10.5" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>';
+
+const RAW_VARIANTS = [
+  ["Xin chào [Tên], |FPT Camera hiện đang giảm giá [30%] đến ngày [30/06].|Anh/chị {quan tâm em tư vấn thêm nhé.}", 18],
+  ["Chào [Tên], |FPT Camera đang có chương trình giảm giá [30%] đến ngày [30/06].|Anh/chị ~cần thêm thông tin em hỗ trợ ngay ạ.~", 20],
+  ["Em chào [Tên], |Hiện tại FPT Camera đang giảm giá [30%] đến ngày [30/06].|Anh/chị ~muốn tìm hiểu thêm không ạ?~", 21],
+  ["Xin kính chào [Tên], |FPT Camera hiện có ưu đãi giảm [30%] đến ngày [30/06].|Anh/chị {quan tâm em tư vấn thêm nhé!}", 19],
+  ["Chào anh/chị [Tên], |FPT Camera đang ưu đãi hấp dẫn: giảm [30%] đến ngày [30/06].|Nếu cần thêm thông tin em ~sẵn sàng hỗ trợ ạ.~", 22],
+  ["Kính chào [Tên], |Chương trình giảm [30%] của FPT Camera áp dụng đến ngày [30/06].|Anh/chị {để lại phản hồi em tư vấn ngay ạ.}", 24],
+  ["Dạ em chào [Tên], |FPT Camera ưu đãi giảm tới [30%], hạn cuối ngày [30/06].|Anh/chị ~cho em xin ít phút tư vấn nhé.~", 25],
+  ["Xin chào [Tên], |Ưu đãi [30%] cho FPT Camera chỉ còn đến ngày [30/06].|Anh/chị {quan tâm em gửi báo giá ngay ạ.}", 23],
+  ["Chào [Tên], |FPT Camera giảm giá [30%] – áp dụng đến hết ngày [30/06].|Anh/chị ~muốn lắp đặt sớm em hỗ trợ liền nhé.~", 26],
+  ["Em chào [Tên] ạ, |Hiện FPT Camera có ưu đãi [30%] đến ngày [30/06].|Anh/chị {cần tư vấn thêm cứ nhắn em nhé.}", 20],
+  ["Chào [Tên] ạ, |FPT Camera đang giảm [30%] cho khách đăng ký trước ngày [30/06].|Anh/chị ~muốn xem mẫu camera em gửi ngay nhé.~", 27],
+  ["[Tên] ơi, |FPT Camera ưu đãi [30%] tới ngày [30/06] thôi ạ.|Anh/chị {quan tâm em tư vấn chi tiết nhé.}", 22],
+  ["Xin chào [Tên], |Ưu đãi giảm [30%] khi lắp FPT Camera, kết thúc ngày [30/06].|Anh/chị ~cho em biết nhu cầu để tư vấn đúng nhé.~", 28],
+  ["Kính chào [Tên], |FPT Camera hiện giảm [30%], chương trình đến ngày [30/06].|Anh/chị {cần hỗ trợ em có mặt ngay ạ.}", 21],
+  ["Chào [Tên], |Đợt này FPT Camera giảm [30%] — áp dụng tới ngày [30/06].|Anh/chị ~muốn em báo giá theo số lượng không ạ?~", 29],
+  ["Dạ chào [Tên], |FPT Camera giảm [30%] cho đơn hoàn tất trước ngày [30/06].|Anh/chị {quan tâm em gửi thông tin nhé.}", 23],
+  ["Em chào [Tên], |Chỉ còn đến ngày [30/06]: FPT Camera giảm [30%].|Anh/chị ~cần lắp gấp em xếp lịch sớm nhé.~", 26],
+  ["Xin chào [Tên] ạ, |FPT Camera ưu đãi [30%] hết ngày [30/06].|Anh/chị {muốn tư vấn thêm em hỗ trợ ngay.}", 19],
+  ["Chào anh/chị [Tên], |FPT Camera có ưu đãi [30%] đến ngày [30/06] cho khách mới.|Anh/chị ~để lại thời gian rảnh em gọi lại nhé.~", 30],
+  ["[Tên] thân mến, |FPT Camera đang giảm [30%], hạn đến ngày [30/06].|Anh/chị {quan tâm em tư vấn trong 2 phút ạ.}", 24]
+];
+
+const BADGE_TINTS = [
+  ["#DCFCE7", "#166534"], ["#DBEAFE", "#1E40AF"], ["#EDE9FE", "#5B21B6"], ["#FEF3C7", "#92400E"], ["#FFE4E6", "#9F1239"],
+  ["#CCFBF1", "#115E59"], ["#E0E7FF", "#3730A3"], ["#FCE7F3", "#9D174D"], ["#FEF9C3", "#854D0E"], ["#D1FAE5", "#065F46"]
+];
+
+const VAR_NAMES = ["Tên", "Họ và tên", "Số điện thoại", "Giới tính", "Tên nhân viên", "Tên zalo", "Trường động"];
+
+const VALUE_SUGGESTIONS = {
+  "Tình trạng": ["Liên lạc được - Chưa TV", "Đã tư vấn", "Không liên lạc được", "Chốt đơn"],
+  "Nguồn tiếp cận": ["Facebook", "Zalo OA", "Fchat", "Website", "Hotline"],
+  "Trang tiếp cận": ["Trường camera", "Trường FPT", "Camera giá rẻ"],
+  "Giới tính": ["Nam", "Nữ", "Khác"],
+  "Nhóm": ["Khách VIP", "Khách mới", "Khách cũ"],
+  "Nhãn": ["Chăm sóc lại", "VIP", "Tiềm năng", "Đã chốt"],
+  "Sinh nhật": ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4"]
+};
+
+class Component extends DCLogic {
+  state = {
+    step: this.props.initialStep ?? 1,
+    active: true,
+    name: "",
+    channel: "zalo",
+    pages: [
+      { label: "Tuấn Anh-0909988776", color: "#2FA0D8" },
+      { label: "Hoàng Minh-0987654321", color: "#1B2733" },
+      { label: "Hạ Đỏ-0356271836", color: "#3A9F09" },
+      { label: "Trần Nguyên-0912345678", color: "#E2181A" },
+      { label: "Hà Trang-0356441320", color: "#C026D3" }
+    ],
+    source: "lead",
+    leadMode: "all",
+    phoneDraft: "",
+    windowFrom: "08:00",
+    windowTo: "20:00",
+    dns: { failed: true, otherSale: true, otherSaleDays: "7", optout: true },
+    matchMode: "all",
+    conditions: [
+      { field: "Tình trạng", values: [{ label: "Liên lạc được - Chưa TV", tone: "dot" }] },
+      { field: "Nguồn tiếp cận", values: [{ label: "Facebook", tone: "plain" }, { label: "Zalo OA", tone: "plain" }, { label: "Fchat", tone: "plain" }] },
+      { field: "Giới tính", values: [{ label: "Nam", tone: "plain" }, { label: "Nữ", tone: "plain" }, { label: "Khác", tone: "plain" }] },
+      { field: "Nhãn", values: [{ label: "Chăm sóc lại", tone: "blue" }, { label: "VIP", tone: "red" }] },
+      { field: "Sinh nhật", sub: "Tháng sinh", values: [{ label: "Tháng 1", tone: "plain" }, { label: "Tháng 2", tone: "plain" }] }
+    ],
+    exclude: true,
+    dnsChecked: {},
+    phoneText: "0913245842, 0943515145, 0914532424553, 0935412123, 0392114105, 03165415, 0913245840",
+    files: [{ name: "File_attachment.xls" }, { name: "File_attachment.xls" }],
+    fmiSet: "",
+    distribution: [
+      { name: "Trường camera", color: "#0E84DA", pct: "", qty: "" },
+      { name: "Trường FPT", color: "#E98305", pct: "", qty: "" },
+      { name: "Camera giá rẻ", color: "#3A9F09", pct: "", qty: "" }
+    ],
+    retryCampaign: "",
+    retryGroup: "",
+    retryError: "Tất cả lỗi",
+    variantCount: 10,
+    styleValue: "Thân thiện, gần gũi",
+    toneValue: "Tích cực, lạc quan",
+    advOpen: true,
+    autoFriend: false,
+    autoTag: false,
+    charCount: 95,
+    dailyLimit: "150",
+    interval: "3",
+    intervalUnit: "Phút",
+    schedule: "once",
+    birthdayMode: "Trước sinh nhật",
+    birthdayOffset: "1",
+    onceDate: null,
+    calendarOpen: false,
+    calMonth: { y: new Date().getFullYear(), m: new Date().getMonth() },
+    freq: "Hàng tuần",
+    weekDays: ["T2", "T3", "T4", "T5", "T6"],
+    monthDays: ["N1", "N3", "N5", "N7", "N9"],
+    unitPickerOpen: false,
+    rangeFrom: "",
+    rangeTo: "",
+    repeatEvery: "",
+    repeatUnit: "Phút",
+    days: ["T2", "T4", "T6"],
+    seed: 0,
+    selText: "",
+    toast: null,
+    lockedTerms: ["30%", "30/06"],
+    fullscreen: false,
+    estStatus: this.props.estState ?? "idle"
+  };
+
+  editorRef = React.createRef();
+  savedHtml = null;
+
+  onSelectionChange = () => {
+    const el = this.editorRef.current;
+    const sel = window.getSelection();
+    let t = "";
+    if (el && sel && sel.rangeCount && !sel.isCollapsed && el.contains(sel.getRangeAt(0).commonAncestorContainer)) {
+      t = sel.toString().trim();
+      this.savedRange = sel.getRangeAt(0).cloneRange();
+    }
+    if (t !== this.state.selText) this.setState({ selText: t });
+  };
+
+  flash(msg, kind) {
+    clearTimeout(this._toastT);
+    this.setState({ toast: { msg, kind: kind || "ok" } });
+    this._toastT = setTimeout(() => this.setState({ toast: null }), 2600);
+  }
+
+  syncLocked() {
+    const el = this.editorRef.current;
+    if (!el) return;
+    const terms = Array.from(el.querySelectorAll('[data-lock="1"]')).map(n => (n.textContent || "").trim()).filter(Boolean);
+    this.setState({ lockedTerms: terms });
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("selectionchange", this.onSelectionChange);
+    clearTimeout(this._toastT);
+    clearTimeout(this._estTimer);
+  }
+
+  componentDidMount() { document.addEventListener("selectionchange", this.onSelectionChange); this.hydrate(); }
+  componentDidUpdate(prevProps) {
+    this.hydrate();
+    if (this.props.estState && this.props.estState !== prevProps.estState) {
+      this.setState({ estStatus: this.props.estState });
+    }
+  }
+
+  runEstimate = () => {
+    if (this._estTimer) clearTimeout(this._estTimer);
+    this.setState({ estStatus: "loading" });
+    this._estTimer = setTimeout(() => this.setState({ estStatus: "result" }), 1300);
+  };
+
+  lockTint() { return this.props.lockTint ?? "#FEF3C7"; }
+
+  chipHtml(text) {
+    return '<span data-lock="1" contenteditable="false" title="Bấm để bỏ khóa" ' +
+      'onmouseover="this.style.background=&quot;#FDE68A&quot;;this.style.boxShadow=&quot;0 0 0 3px rgba(180,83,9,.14)&quot;" ' +
+      'onmouseout="this.style.background=&quot;' + this.lockTint() + '&quot;;this.style.boxShadow=&quot;none&quot;" ' +
+      'style="background:' + this.lockTint() +
+      ';border:1px solid #FDE68A;border-radius:4px;padding:1px 6px;color:#92400E;font-weight:500;white-space:nowrap;cursor:pointer;transition:background 140ms var(--ease-standard),box-shadow 140ms var(--ease-standard);">' +
+      text.replace(/&/g, "&amp;").replace(/</g, "&lt;") + LOCK_SVG + "</span>";
+  }
+
+  varHtml(label) {
+    return '<span data-var="1" contenteditable="false" style="color:var(--brand-normal);font-weight:500;white-space:nowrap;">' +
+      label.replace(/[{}]/g, "") + "</span>";
+  }
+
+  defaultHtml() {
+    return "<div>Xin chào " + this.varHtml("Tên") + ",</div>" +
+      "<div>FPT Camera hiện đang giảm giá " + this.chipHtml("30%") + " đến ngày " + this.chipHtml("30/06") + ".</div>" +
+      "<div>Anh/chị quan tâm em tư vấn thêm nhé.</div>";
+  }
+
+  hydrate() {
+    const el = this.editorRef.current;
+    if (el && el.dataset.hydrated !== "1") {
+      el.innerHTML = this.savedHtml || this.defaultHtml();
+      el.dataset.hydrated = "1";
+    }
+  }
+
+  saveEditor() {
+    const el = this.editorRef.current;
+    if (!el) return;
+    this.savedHtml = el.innerHTML;
+    this.setState({ charCount: el.innerText.replace(/\n+$/, "").length });
+  }
+
+  lockSelection = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
+    const el = this.editorRef.current;
+    const sel = window.getSelection();
+    let range = null;
+    if (sel && sel.rangeCount && !sel.isCollapsed && el && el.contains(sel.getRangeAt(0).commonAncestorContainer)) {
+      range = sel.getRangeAt(0);
+    } else if (this.savedRange && el && el.contains(this.savedRange.commonAncestorContainer) && !this.savedRange.collapsed) {
+      range = this.savedRange;
+    }
+    if (!el || !range) {
+      this.flash("Hãy bôi đen phần nội dung cần khóa trước.", "warn");
+      return;
+    }
+    const text = range.toString().trim();
+    if (!text) { this.flash("Hãy bôi đen phần nội dung cần khóa trước.", "warn"); return; }
+    if (sel) { sel.removeAllRanges(); sel.addRange(range); }
+    range.deleteContents();
+    const holder = document.createElement("span");
+    holder.innerHTML = this.chipHtml(text);
+    const node = holder.firstChild;
+    range.insertNode(node);
+    range.setStartAfter(node);
+    range.collapse(true);
+    if (sel) { sel.removeAllRanges(); sel.addRange(range); }
+    this.savedRange = null;
+    node.animate(
+      [{ transform: "scale(.86)", opacity: .3 }, { transform: "scale(1.06)", opacity: 1 }, { transform: "scale(1)" }],
+      { duration: 260, easing: "cubic-bezier(0.2,0,0,1)" }
+    );
+    this.setState({ selText: "" });
+    this.saveEditor();
+    this.syncLocked();
+    this.flash('Đã khóa “' + text + '” — AI sẽ giữ nguyên nội dung này.', "ok");
+  };
+
+  onEditorClick = (e) => {
+    const chip = e.target.closest && e.target.closest('[data-lock="1"]');
+    if (!chip) return;
+    const text = (chip.textContent || "").trim();
+    chip.replaceWith(document.createTextNode(text));
+    this.saveEditor();
+    this.syncLocked();
+    this.flash('Đã mở khóa “' + text + '” — AI có thể thay đổi.', "warn");
+  };
+
+  unlockTerm(term) {
+    const el = this.editorRef.current;
+    if (!el) return;
+    const chip = Array.from(el.querySelectorAll('[data-lock="1"]')).find(n => (n.textContent || "").trim() === term);
+    if (!chip) return;
+    chip.replaceWith(document.createTextNode(term));
+    this.saveEditor();
+    this.syncLocked();
+    this.flash('Đã mở khóa “' + term + '”.', "warn");
+  }
+
+  insertVar(label) {
+    const el = this.editorRef.current;
+    if (!el) return;
+    const holder = document.createElement("span");
+    holder.innerHTML = this.varHtml(label);
+    const node = holder.firstChild;
+    const sel = window.getSelection();
+    const live = sel && sel.rangeCount ? sel.getRangeAt(0) : null;
+    let range = null;
+    if (live && el.contains(live.commonAncestorContainer)) range = live;
+    else if (this.savedRange && el.contains(this.savedRange.commonAncestorContainer)) range = this.savedRange;
+
+    if (range) {
+      range.deleteContents();
+      range.insertNode(node);
+    } else {
+      const last = el.lastElementChild || el;
+      const prev = (last.textContent || "").slice(-1);
+      if (prev && !/\s$/.test(prev)) last.appendChild(document.createTextNode(" "));
+      last.appendChild(node);
+      range = document.createRange();
+    }
+    el.focus();
+    range.setStartAfter(node);
+    range.collapse(true);
+    if (sel) { sel.removeAllRanges(); sel.addRange(range); }
+    this.savedRange = range.cloneRange();
+    this.saveEditor();
+    this.flash('Đã chèn trường động “' + label + '” — luôn cá nhân hóa theo từng khách hàng.', "ok");
+  }
+
+  parseLine(raw) {
+    const segs = [];
+    const re = /\[([^\]]+)\]|\{([^}]+)\}|~([^~]+)~/g;
+    let last = 0, m;
+    while ((m = re.exec(raw)) !== null) {
+      if (m.index > last) segs.push({ t: raw.slice(last, m.index), k: "plain" });
+      if (m[1] !== undefined) segs.push({ t: m[1], k: VAR_NAMES.includes(m[1]) ? "var" : "lock" });
+      else if (m[2] !== undefined) segs.push({ t: m[2], k: "add" });
+      else segs.push({ t: m[3], k: "chg" });
+      last = re.lastIndex;
+    }
+    if (last < raw.length) segs.push({ t: raw.slice(last), k: "plain" });
+    const styles = {
+      plain: { color: "var(--text-body)" },
+      lock: { background: this.lockTint(), border: "1px solid #FDE68A", color: "#92400E", borderRadius: 4, padding: "1px 6px", fontWeight: 500, whiteSpace: "nowrap" },
+      var: { color: "var(--brand-normal)", fontWeight: 500, whiteSpace: "nowrap" },
+      add: { background: "#DCFCE7", borderRadius: 4, padding: "1px 4px" },
+      chg: { background: "#FEE2E2", borderRadius: 4, padding: "1px 4px" }
+    };
+    return { segs: segs.map((s, i) => ({ ...s, key: i, t: s.t, style: styles[s.k], isLock: s.k === "lock" })) };
+  }
+
+  phoneInputRef = React.createRef();
+
+  commitPhoneDraft = () => {
+    const raw = this.state.phoneDraft.trim();
+    if (!raw) return;
+    const added = raw.split(/[\s,;\n]+/).filter(Boolean);
+    this.setState(st => ({
+      phoneText: st.phoneText.split(/[\s,]+/).filter(Boolean).concat(added).join(", "),
+      phoneDraft: ""
+    }));
+  };
+
+  phoneKeyDown = (e) => {
+    if (e.key === "Enter" || e.key === "," || e.key === " " || e.key === ";") {
+      e.preventDefault();
+      this.commitPhoneDraft();
+    } else if (e.key === "Backspace" && !this.state.phoneDraft) {
+      this.setState(st => {
+        const list = st.phoneText.split(/[\s,]+/).filter(Boolean);
+        list.pop();
+        return { phoneText: list.join(", ") };
+      });
+    }
+  };
+
+  phonePaste = (e) => {
+    const text = (e.clipboardData || window.clipboardData).getData("text");
+    if (!text) return;
+    e.preventDefault();
+    const added = text.split(/[\s,;\n]+/).filter(Boolean);
+    this.setState(st => ({ phoneText: st.phoneText.split(/[\s,]+/).filter(Boolean).concat(added).join(", ") }));
+    this.flash("Đã nhận diện " + added.length + " số điện thoại.", "ok");
+  };
+
+  phoneList() {
+    return this.state.phoneText.split(/[\s,]+/).filter(Boolean).map((v, i) => {
+      const digits = v.replace(/^\+/, "");
+      const ok = /^(0|84)\d{7,11}$/.test(digits) && digits.length >= 8 && digits.length <= 12;
+      let dns = "ok";
+      if (!ok) dns = "invalid";
+      else {
+        const last = parseInt(digits.slice(-1), 10);
+        if (last <= 1) dns = "red";
+        else if (last <= 3) dns = "yellow";
+      }
+      return { value: v, invalid: !ok, dns, i };
+    });
+  }
+
+  set = (k) => (e) => this.setState({ [k]: e && e.target ? e.target.value : e });
+
+  renderVals() {
+    const s = this.state;
+    const navData = [
+      ["Trang chủ", "M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z", false],
+      ["Hội thoại", "M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z", false],
+      ["Quản lý bài viết", "M4.5 4h15v16h-15zM8 8.5h8M8 12h8M8 15.5h5", true],
+      ["Thiết lập website", "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18", false],
+      ["Quản lý cuộc gọi", "M6 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z", true],
+      ["Quản lý khách hàng", "M15 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M9 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7M21 20v-2a4 4 0 0 0-3-3.9", true],
+      ["Báo cáo", "M12 3a9 9 0 1 0 9 9h-9zM14.5 3.2A9 9 0 0 1 20.8 9.5h-6.3z", false],
+      ["Cấu hình hệ thống", "M12 8.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5zM12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2 7 7M17 17l1.8 1.8M18.8 5.2 17 7M7 17l-1.8 1.8", false]
+    ];
+    const navItems = navData.map(([label, d, caret], i) => {
+      const activeItem = label === "Cấu hình hệ thống";
+      return {
+        key: i, label, d, caret,
+        style: "display:flex;align-items:center;gap:12px;padding:12px 20px;cursor:pointer;font-weight:" + (activeItem ? "600" : "400") +
+          ";color:" + (activeItem ? "var(--brand-normal)" : "var(--text-body)") +
+          ";background:" + (activeItem ? "var(--brand-1)" : "transparent") +
+          ";border-right:" + (activeItem ? "3px solid var(--brand-normal)" : "3px solid transparent") + ";"
+      };
+    });
+
+    const pageTabs = ["Kịch bản chăm sóc", "Trả lời theo từ khóa", "Kịch bản theo điều kiện", "Mega Push Campaign", "Đăng bài tự động"].map((label, i) => {
+      const on = label === "Mega Push Campaign";
+      return { key: i, label, style: "padding-bottom:12px;cursor:pointer;font-weight:" + (on ? "600" : "400") + ";color:" + (on ? "var(--brand-normal)" : "var(--text-body)") + ";border-bottom:2px solid " + (on ? "var(--brand-normal)" : "transparent") + ";" };
+    });
+
+    const stepLabels = ["Khởi tạo", "Đối tượng nhận tin nhắn", "Nội dung", "Lịch gửi tự động"];
+    const steps = stepLabels.map((label, i) => {
+      const n = i + 1;
+      const done = s.step > n, current = s.step === n;
+      const bg = done || current ? "var(--brand-1)" : "var(--neutral-2)";
+      const clip = i === 0 ? "polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%)"
+        : "polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%, 16px 50%)";
+      return {
+        key: n, n, label, done, showNum: !done,
+        style: "flex:1;height:40px;display:flex;align-items:center;gap:10px;padding:0 18px 0 " + (i === 0 ? "18px" : "30px") +
+          ";cursor:pointer;background:" + bg + ";clip-path:" + clip + ";margin-left:" + (i === 0 ? "0" : "-14px") +
+          ";color:" + (done || current ? "var(--text-strong)" : "var(--text-secondary)") + ";font-weight:" + (current ? "600" : "400") + ";",
+        badge: "width:22px;height:22px;flex:none;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;background:" +
+          (done || current ? "var(--brand-normal)" : "var(--neutral-5)") + ";color:#fff;",
+        go: () => this.setState({ step: n })
+      };
+    });
+
+    const channelData = [["zalo", "Zalo Cá nhân", "#0068FF", "Zalo"], ["fb", "Facebook", "#1877F2", "f"], ["oa", "Zalo OA", "#8AB4F8", "OA"], ["tt", "Tiktok Business", "#111111", "TT"]];
+    const channels = channelData.map(([key, label, dot, mark]) => {
+      const on = s.channel === key;
+      return {
+        key, label, dot, mark, selected: on,
+        labelStyle: "font-weight:500;color:" + (on ? "var(--text-strong)" : "var(--text-secondary)") + ";",
+        style: "position:relative;height:76px;border-radius:8px;display:flex;align-items:center;justify-content:center;gap:12px;cursor:pointer;border:1.5px solid " +
+          (on ? "var(--brand-normal)" : "var(--border-default)") + ";background:" + (on ? "var(--brand-1)" : "#fff") + ";",
+        pick: () => this.setState({ channel: key })
+      };
+    });
+
+    const phones = this.phoneList();
+    const validPhones = phones.filter(p => !p.invalid).length;
+    const sourceData = [
+      ["lead", "Lấy từ Lead", "Khách hàng CRM", "52.341 khách", "M15 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M9 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7M18 8v6M21 11h-6", false],
+      ["paste", "Nhập/Dán số điện thoại", "Nhập hoặc dán danh sách", phones.length + " số", "M6 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z", false],
+      ["upload", "Tải lên danh sách", "File Excel, CSV, TXT", s.files.length ? s.files.length + " file" : "Chưa chọn", "M12 16V4m-4 4 4-4 4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3", false],
+      ["fmi", "Tập dữ liệu từ FMI", "Chọn tập dữ liệu", "5 tập", "M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3", false],
+      ["retry", "Tập dữ liệu gửi thất bại (Retry)", "Gửi lại khách đã fail", "0 khách", "M20 12a8 8 0 1 1-2.6-5.9M20 4v4h-4", true]
+    ];
+    const sources = sourceData.map(([key, title, desc, count, d, isNew]) => {
+      const on = s.source === key;
+      return {
+        key, title, desc, count, d, isNew, selected: on,
+        style: "position:relative;height:100%;box-sizing:border-box;border-radius:8px;padding:12px;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;gap:8px;border:1.5px solid " +
+          (on ? "var(--brand-normal)" : "var(--border-default)") + ";background:" + (on ? "var(--brand-1)" : "#fff") + ";",
+        iconStyle: "width:32px;height:32px;flex:none;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:" +
+          (on ? "var(--brand-2)" : "var(--neutral-2)") + ";color:var(--brand-normal);",
+        countStyle: "font-weight:600;color:" + (key === "retry" || count.startsWith("Chưa") || count.startsWith("0") ? "var(--text-body)" : "var(--status-success)") + ";",
+        pick: () => this.setState({ source: key })
+      };
+    });
+
+    const sourceTitles = { lead: "Lấy từ Lead", paste: "Nhập/Dán số điện thoại", upload: "Tải lên danh sách", fmi: "Tập dữ liệu từ FMI", retry: "Tập dữ liệu gửi thất bại (Retry)" };
+    const estimates = {
+      lead: s.leadMode === "cond"
+        ? [["Tổng số Lead", "52.341", false], ["Thỏa mãn điều kiện lọc", "18.420", false], ["Loại trùng (dự kiến)", "412", false], ["Còn lại sau lọc", "18.008 khách", true]]
+        : [["Tổng số Lead", "52.341", false], ["Đã liên hệ trong 30 ngày", "8.214", false], ["Loại trùng (dự kiến)", "1.236", false], ["Còn lại sau lọc", "51.105 khách", true]],
+      paste: [["Tổng số dòng", String(phones.length), false], ["Số hợp lệ", String(validPhones), false], ["Số không hợp lệ", String(phones.length - validPhones), false], ["Còn lại sau lọc", validPhones + " khách", true]],
+      upload: [["Tổng số dòng", "0", false], ["Số hợp lệ", "0", false], ["Số không hợp lệ", "0", false], ["Còn lại sau lọc", "0 khách", true]],
+      fmi: [["Tổng số điện thoại", "0", false], ["Số hợp lệ", "0", false], ["Số không hợp lệ", "0", false], ["Còn lại sau lọc", "0 khách", true]],
+      retry: [["Số điện thoại", "0", false], ["Số hợp lệ", "0", false], ["Số không hợp lệ", "0", false], ["Còn lại sau lọc", "0 khách", true]]
+    };
+    const estimate = (estimates[s.source] || []).map(([label, value, strong], i) => ({
+      key: i, label, value,
+      valueStyle: "font-weight:600;color:" + (strong ? "var(--status-success)" : "var(--text-strong)") + ";"
+    }));
+
+    const tagStyles = {
+      plain: "display:inline-flex;align-items:center;gap:8px;background:var(--neutral-2);color:var(--text-body);border-radius:4px;padding:4px 9px;font-size:13px;",
+      dot: "display:inline-flex;align-items:center;gap:8px;background:var(--neutral-2);color:var(--text-body);border-radius:4px;padding:4px 9px;font-size:13px;",
+      blue: "display:inline-flex;align-items:center;gap:8px;background:var(--brand-normal);color:#fff;border-radius:4px;padding:4px 9px;font-size:13px;",
+      red: "display:inline-flex;align-items:center;gap:8px;background:var(--status-danger);color:#fff;border-radius:4px;padding:4px 9px;font-size:13px;"
+    };
+    const conditionEstimate = "18.420 khách";
+    const SUB_OPTIONS = { "Sinh nhật": ["Tháng sinh", "Ngày sinh", "Năm sinh"] };
+    const conditions = s.conditions.map((c, ci) => ({
+      key: ci, field: c.field, showJoin: ci > 0,
+      hasSub: !!SUB_OPTIONS[c.field],
+      subOptions: SUB_OPTIONS[c.field] || [],
+      sub: c.sub || (SUB_OPTIONS[c.field] || [])[0] || "",
+      setSub: (val) => this.setState(st => ({ conditions: st.conditions.map((x, i) => i === ci ? { ...x, sub: val } : x) })),
+      values: c.values.map((v, vi) => ({
+        key: vi, label: v.label, style: tagStyles[v.tone] || tagStyles.plain,
+        remove: () => this.setState(st => {
+          const next = st.conditions.map((x, i) => i === ci ? { ...x, values: x.values.filter((_, j) => j !== vi) } : x);
+          return { conditions: next };
+        })
+      })),
+      setField: (val) => this.setState(st => ({ conditions: st.conditions.map((x, i) => i === ci ? { ...x, field: val, values: [] } : x) })),
+      remove: () => this.setState(st => ({ conditions: st.conditions.filter((_, i) => i !== ci) })),
+      suggestions: (VALUE_SUGGESTIONS[c.field] || []).filter(v => !c.values.some(x => x.label === v)).slice(0, 4).map((v, k) => ({
+        key: k, label: v,
+        add: () => this.setState(st => ({
+          conditions: st.conditions.map((x, i) => i === ci ? { ...x, values: x.values.concat({ label: v, tone: c.field === "Nhãn" ? "blue" : "plain" }) } : x)
+        }))
+      }))
+    }));
+
+    const variantOptionData = [
+      [5, "5 biến thể", "Dễ kiểm duyệt, nội dung đa dạng.", "#DBEAFE", "#2563EB", "M12 3 4 7v10l8 4 8-4V7z", false],
+      [10, "10 biến thể", "Phù hợp với hầu hết chiến dịch.", "#EDE9FE", "#7C3AED", "M12 3 4 7v10l8 4 8-4V7zM4 7l8 4 8-4M12 11v10", true],
+      [20, "20 biến thể", "Đa dạng cao, tăng khả năng tránh trùng lặp.", "#FFEDD5", "#EA580C", "M12 3 4 7v10l8 4 8-4V7zM4 7l8 4 8-4", false],
+      [0, "Tạo biến thể tới từng khách hàng", "Nội dung riêng biệt cho từng khách hàng.", "#FEE2E2", "#DC2626", "M15 20v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2M12 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7", false]
+    ];
+    const variantOptions = variantOptionData.map(([val, title, desc, tint, iconColor, d, recommended]) => {
+      const on = s.variantCount === val;
+      return {
+        key: val, title, desc, tint, iconColor, d, recommended, selected: on,
+        style: "border-radius:8px;padding:12px;cursor:pointer;border:1.5px solid " +
+          (on ? "var(--brand-normal)" : val === 0 ? "#FCA5A5" : "var(--border-default)") + ";background:" + (on ? "var(--brand-1)" : "#fff") + ";",
+        pick: () => this.setState({ variantCount: val })
+      };
+    });
+
+    const count = s.variantCount === 0 ? 0 : s.variantCount;
+    const variants = RAW_VARIANTS.slice(0, Math.min(count, RAW_VARIANTS.length)).map((v, i) => {
+      const [raw, diff] = v;
+      const [bg, fg] = BADGE_TINTS[i % BADGE_TINTS.length];
+      return {
+        key: i + "-" + s.seed, n: i + 1, diff: diff + (s.seed % 3),
+        badgeStyle: "width:34px;height:34px;flex:none;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:" + bg + ";color:" + fg + ";",
+        lines: raw.split("|").map((l, j) => ({ key: j, ...this.parseLine(l) }))
+      };
+    });
+
+    const limitOptions = ["30", "60", "90", "120", "150", "Khác"].map(v => ({
+      key: v, label: v, selected: s.dailyLimit === v, pick: () => this.setState({ dailyLimit: v })
+    }));
+
+    const scheduleData = [];
+    if (s.source === "lead") scheduleData.push(["birthday", "Gửi vào ngày sinh nhật"]);
+    scheduleData.push(["once", "Gửi một lần"], ["repeat", "Gửi định kỳ"], ["range", "Gửi trong khoảng thời gian cụ thể"]);
+    const activeSchedule = scheduleData.some(d => d[0] === s.schedule) ? s.schedule : "once";
+    const scheduleOptions = scheduleData.map(([key, label]) => ({
+      key, label, selected: activeSchedule === key,
+      isBirthday: activeSchedule === key && key === "birthday",
+      isOnce: activeSchedule === key && key === "once",
+      isRepeat: activeSchedule === key && key === "repeat",
+      isRange: activeSchedule === key && key === "range",
+      pick: () => this.setState({ schedule: key, calendarOpen: false, unitPickerOpen: false })
+    }));
+
+    const WEEK_UNITS = [["T2", "Thứ Hai"], ["T3", "Thứ Ba"], ["T4", "Thứ Tư"], ["T5", "Thứ Năm"], ["T6", "Thứ Sáu"], ["T7", "Thứ Bảy"], ["CN", "Chủ Nhật"]];
+    const MONTH_UNITS = Array.from({ length: 31 }, (_, i) => ["N" + (i + 1), "Ngày " + (i + 1)]);
+    const unitSet = s.freq === "Hàng tháng" ? MONTH_UNITS : WEEK_UNITS;
+    const chosen = s.freq === "Hàng tháng" ? s.monthDays : s.weekDays;
+    const chosenKey = s.freq === "Hàng tháng" ? "monthDays" : "weekDays";
+    const toggleUnit = (code) => this.setState(st => {
+      const cur = st[chosenKey];
+      return { [chosenKey]: cur.includes(code) ? cur.filter(x => x !== code) : cur.concat(code) };
+    });
+
+    const cal = s.calMonth;
+    const first = new Date(cal.y, cal.m, 1);
+    const startOffset = first.getDay();
+    const daysInMonth = new Date(cal.y, cal.m + 1, 0).getDate();
+    const prevDays = new Date(cal.y, cal.m, 0).getDate();
+    const cells = [];
+    for (let i = 0; i < 42; i++) {
+      const dayNum = i - startOffset + 1;
+      const outside = dayNum < 1 || dayNum > daysInMonth;
+      const n = dayNum < 1 ? prevDays + dayNum : dayNum > daysInMonth ? dayNum - daysInMonth : dayNum;
+      cells.push({ i, n, outside, dayNum });
+    }
+    const today = new Date();
+    const sel = s.onceDate;
+
+    const dnsTotalSource = { lead: s.leadMode === "cond" ? 18420 : 52341, paste: validPhones, upload: 0, fmi: s.fmiSet ? 12480 : 0, retry: 0 }[s.source] || 0;
+    const dnsGroupData = [
+      ["red", "DNS", "Do not send", true, "(Không được phép gửi. Hệ thống tự động loại trừ khi chạy chiến dịch)", [
+        "SĐT đang là khách hàng hiện hữu của FTEL",
+        "SĐT Sale khác đã gửi thành công trên SOP gần đây",
+        "SĐT khách hàng yêu cầu ngừng liên hệ"
+      ]],
+      ["yellow", "Fail", "Hạn chế", false, "(Không nên gửi, nguy cơ thất bại cao)", [
+        "SĐT nằm trong danh sách gửi tin thất bại do kỹ thuật (sai số, mất mạng, timeout)",
+        "SĐT nằm trong danh sách gửi tin thất bại do nền tảng (không có Zalo, Zalo block…)",
+        "SĐT đang nằm trong 1 chiến dịch khác chưa có kết quả"
+      ]]
+    ];
+    const TONE = {
+      yellow: { border: "#FDE68A", bg: "#FFFBEB", badgeBg: "var(--status-warning-bg)", badgeFg: "var(--status-warning-strong, #92400E)" },
+      red: { border: "#FCA5A5", bg: "#FEF2F2", badgeBg: "var(--status-danger-bg)", badgeFg: "var(--status-danger)" }
+    };
+    const dnsGroups = dnsGroupData.map(([tone, title, titleFull, locked, note, reasons]) => {
+      const t = TONE[tone];
+      return {
+        key: tone, title, titleFull, note, locked,
+        titleColor: tone === "red" ? "var(--status-danger)" : "var(--status-warning)",
+        isRed: tone === "red",
+        isFail: tone === "yellow",
+        reasons: reasons.map((text, i) => {
+          const rk = tone + i;
+          const checked = locked ? true : (s.dnsChecked[rk] === true);
+          return {
+            key: i, text, checked, disabled: locked,
+            rowStyle: "display:flex;align-items:flex-start;gap:10px;padding:7px 4px;cursor:" + (locked ? "default" : "pointer") + ";",
+            toggle: locked ? (() => {}) : (() => this.setState(st => ({ dnsChecked: { ...st.dnsChecked, [rk]: !(st.dnsChecked[rk] === true) } })))
+          };
+        }),
+        cardStyle: "border-radius:8px;padding:4px 0;",
+        badgeStyle: "display:inline-flex;align-items:center;gap:6px;background:" + t.badgeBg + ";color:" + t.badgeFg + ";font-size:12px;font-weight:600;border-radius:4px;padding:3px 9px;"
+      };
+    });
+    const excluded = Math.round(dnsTotalSource * 0.11);
+    const totalSource = dnsTotalSource;
+
+    const HOURS = Array.from({ length: 17 }, (_, i) => String(i + 6).padStart(2, "0") + ":00");
+    const fromH = parseInt(s.windowFrom, 10);
+    const toH = parseInt(s.windowTo, 10);
+    const nightRisk = toH <= fromH;
+
+    const weekDays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"].map(d => {
+      const on = s.days.includes(d);
+      return {
+        key: d, label: d,
+        style: "width:38px;height:38px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-weight:500;border:1px solid " +
+          (on ? "var(--brand-normal)" : "var(--border-default)") + ";background:" + (on ? "var(--brand-normal)" : "#fff") + ";color:" + (on ? "#fff" : "var(--text-body)") + ";",
+        toggle: () => this.setState(st => ({ days: on ? st.days.filter(x => x !== d) : st.days.concat(d) }))
+      };
+    });
+
+    const estStatus = s.estStatus;
+    const estNums = estStatus === "zero"
+      ? [["Đối tượng nhận:", "320", false], ["Dự kiến loại trừ:", "320", false], ["Dự kiến gửi:", "0", true]]
+      : [["Đối tượng nhận:", "12.480", false], ["Dự kiến loại trừ:", "1.860", false], ["Dự kiến gửi:", "10.620", false]];
+    const estMuted = estStatus === "stale";
+    const estMetrics = estNums.map(([label, value, danger], i) => ({
+      key: i, label, value,
+      labelStyle: "color:" + (estMuted ? "var(--text-secondary)" : "var(--text-body)") + ";",
+      valueStyle: "font-weight:700;color:" + (estMuted ? "var(--text-secondary)" : (danger ? "var(--status-danger)" : "var(--text-strong)")) + ";"
+    }));
+    let estBarStyle = "background:#fff;border:1px solid var(--border-subtle);";
+    if (estStatus === "stale") estBarStyle = "background:#FFFBEB;border:1px solid #FCD34D;";
+    else if (estStatus === "error") estBarStyle = "background:#FEF2F2;border:1px solid #FECACA;";
+    estBarStyle += "border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:16px;min-height:66px;box-sizing:border-box;";
+    const estBtnBase = "height:40px;padding:0 20px;border-radius:6px;font-weight:600;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;flex:none;";
+    let estBtn = { label: "Làm mới", disabled: false, spinner: false, style: estBtnBase + "background:#fff;color:var(--brand-normal);border:1px solid var(--brand-normal);cursor:pointer;" };
+    if (estStatus === "idle") estBtn = { label: "Xem ước tính", disabled: false, spinner: false, style: estBtnBase + "background:var(--brand-normal);color:#fff;border:1px solid var(--brand-normal);cursor:pointer;" };
+    else if (estStatus === "loading") estBtn = { label: "Đang tính...", disabled: true, spinner: true, style: estBtnBase + "background:var(--neutral-2);color:var(--text-secondary);border:1px solid var(--border-default);cursor:default;" };
+    else if (estStatus === "stale") estBtn = { label: "Làm mới", disabled: false, spinner: false, style: estBtnBase + "background:#fff;color:var(--status-warning);border:1px solid #FCD34D;cursor:pointer;" };
+    else if (estStatus === "error") estBtn = { label: "Thử lại", disabled: false, spinner: false, style: estBtnBase + "background:#fff;color:var(--status-danger);border:1px solid #FECACA;cursor:pointer;" };
+
+    return {
+      showRail: this.props.showRail ?? true,
+      navItems, pageTabs, steps, channels, sources, conditions, estimate, variantOptions, variants, limitOptions, scheduleOptions,
+      active: s.active,
+      toggleActive: () => this.setState({ active: !s.active }),
+      isStep1: s.step === 1, isStep2: s.step === 2, isStep3: s.step === 3, isStep4: s.step === 4,
+      nextLabel: s.step === 4 ? "Hoàn tất" : "Tiếp tục",
+      back: () => this.setState({ step: Math.max(1, s.step - 1) }),
+      next: () => this.setState({ step: Math.min(4, s.step + 1) }),
+      estIdle: estStatus === "idle",
+      estLoading: estStatus === "loading",
+      estError: estStatus === "error",
+      estStale: estStatus === "stale",
+      estShowMetrics: estStatus === "result" || estStatus === "stale" || estStatus === "zero",
+      estShowInfo: estStatus === "result" || estStatus === "zero",
+      estWarning: estStatus === "zero",
+      estMetrics, estBarStyle, estBtn,
+      runEstimate: this.runEstimate,
+      estTooltip: "Số liệu ước tính tại thời điểm tính, dựa trên cấu hình hiện tại. Số liệu chính thức sẽ được chốt lại ở bước check trước giờ chạy chiến dịch.",
+      name: s.name, setName: this.set("name"),
+      pages: s.pages.map((p, i) => ({ key: i, label: p.label, color: p.color, remove: () => this.setState(st => ({ pages: st.pages.filter((_, j) => j !== i) })) })),
+      sourceTitle: sourceTitles[s.source],
+      isLead: s.source === "lead", isPaste: s.source === "paste", isUpload: s.source === "upload", isFmi: s.source === "fmi", isRetry: s.source === "retry",
+      canExclude: s.source !== "retry",
+      leadModes: [
+        ["all", "Tất cả Lead", "Toàn bộ Lead đang có trong CRM của bạn."],
+        ["cond", "Chỉ Lead thỏa mãn điều kiện", "Lọc theo tình trạng, nguồn, nhãn, nhóm, sinh nhật…"]
+      ].map(([key, label, desc]) => {
+        const on = s.leadMode === key;
+        return {
+          key, label, desc, selected: on,
+          style: "display:flex;align-items:center;gap:12px;border-radius:8px;padding:12px 14px;cursor:pointer;border:1.5px solid " +
+            (on ? "var(--brand-normal)" : "var(--border-default)") + ";background:" + (on ? "var(--brand-1)" : "#fff") + ";",
+          pick: () => this.setState({ leadMode: key })
+        };
+      }),
+      showFilter: s.leadMode === "cond",
+      conditionCount: s.conditions.length,
+      matchAny: s.matchMode === "any", matchAll: s.matchMode === "all",
+      setMatchAny: () => this.setState({ matchMode: "any" }), setMatchAll: () => this.setState({ matchMode: "all" }),
+      joinWord: s.matchMode === "all" ? "VÀ" : "HOẶC",
+      fieldOptions: ["Tình trạng", "Nguồn tiếp cận", "Trang tiếp cận", "Giới tính", "Nhóm", "Nhãn", "Sinh nhật"],
+      addCondition: () => this.setState(st => ({ conditions: st.conditions.concat({ field: "Tình trạng", values: [] }) })),
+      resetConditions: () => this.setState({ conditions: [] }),
+      phoneInputRef: this.phoneInputRef,
+      phoneDraft: s.phoneDraft,
+      setPhoneDraft: this.set("phoneDraft"),
+      phoneKeyDown: this.phoneKeyDown,
+      phonePaste: this.phonePaste,
+      commitPhoneDraft: this.commitPhoneDraft,
+      focusPhoneInput: () => this.phoneInputRef.current && this.phoneInputRef.current.focus(),
+      phonePlaceholder: phones.length ? "Nhập thêm số…" : "Nhập hoặc dán số điện thoại…",
+      phoneCount: phones.length,
+      invalidPhoneCount: phones.filter(p => p.invalid).length,
+      phoneChips: phones.map(p => {
+        const CH = {
+          invalid: ["var(--status-danger-bg)", "var(--status-danger)"],
+          red: ["var(--status-danger-bg)", "var(--status-danger)"],
+          yellow: ["var(--status-warning-bg)", "var(--status-warning-strong, #92400E)"],
+          ok: ["var(--neutral-2)", "var(--text-body)"]
+        };
+        const [bg, fg] = CH[p.dns] || CH.ok;
+        const badgeBg = p.dns === "red" ? "var(--status-danger)" : "var(--status-warning)";
+        return {
+          key: p.i, value: p.value, invalid: p.invalid,
+          invalidIcon: p.dns === "invalid",
+          isDns: p.dns === "yellow" || p.dns === "red",
+          isRed: p.dns === "red",
+          isFail: p.dns === "yellow",
+          badgeLabel: p.dns === "red" ? "DNS" : "Fail",
+          badgeStyle: "display:inline-flex;align-items:center;gap:4px;background:" + badgeBg + ";color:#fff;font-size:10px;font-weight:700;letter-spacing:.03em;border-radius:3px;padding:1px 5px;",
+          style: "display:inline-flex;align-items:center;gap:6px;border-radius:4px;padding:4px 9px;font-size:13px;background:" + bg + ";color:" + fg + ";",
+          remove: () => this.setState(st => ({ phoneText: st.phoneText.split(/[\s,]+/).filter(Boolean).filter((_, j) => j !== p.i).join(", ") }))
+        };
+      }),
+      dnsYellowCount: phones.filter(p => p.dns === "yellow").length,
+      dnsRedCount: phones.filter(p => p.dns === "red").length,
+      hasInvalidOrDns: phones.some(p => p.dns === "invalid" || p.dns === "red"),
+      invalidOrDnsCount: phones.filter(p => p.dns === "invalid" || p.dns === "red").length,
+      removeInvalidAndRedDns: () => this.setState({ phoneText: phones.filter(p => p.dns !== "invalid" && p.dns !== "red").map(p => p.value).join(", ") }),
+      hasYellowDns: phones.some(p => p.dns === "yellow"),
+      hasRedDns: phones.some(p => p.dns === "red"),
+      removeYellowDns: () => this.setState({ phoneText: phones.filter(p => p.dns !== "yellow").map(p => p.value).join(", ") }),
+      removeRedDns: () => this.setState({ phoneText: phones.filter(p => p.dns !== "red").map(p => p.value).join(", ") }),
+      hasInvalidPhones: phones.some(p => p.invalid),
+      removeInvalidPhones: () => this.setState({ phoneText: phones.filter(p => !p.invalid).map(p => p.value).join(", ") }),
+      files: s.files.map((f, i) => ({ key: i, name: f.name, remove: () => this.setState(st => ({ files: st.files.filter((_, j) => j !== i) })) })),
+      addFile: () => this.setState(st => ({ files: st.files.concat({ name: "File_attachment.xls" }) })),
+      fmiSet: s.fmiSet, setFmiSet: v => this.setState({ fmiSet: v }),
+      fmiOptions: ["Tập KH tháng 6", "Tập KH FPT Camera", "Tập KH chưa tương tác"],
+      fmiValidLabel: (s.fmiSet ? "12.480" : "0") + " số điện thoại hợp lệ",
+      distribution: s.distribution.map((r, i) => ({
+        key: i, name: r.name, color: r.color, pct: r.pct, qty: r.qty,
+        setPct: e => this.setState(st => ({ distribution: st.distribution.map((x, j) => j === i ? { ...x, pct: e.target.value } : x) })),
+        setQty: e => this.setState(st => ({ distribution: st.distribution.map((x, j) => j === i ? { ...x, qty: e.target.value } : x) }))
+      })),
+      campaignOptions: ["Mega Push tháng 6", "Khuyến mãi hè", "Chăm sóc khách cũ"],
+      errorGroupOptions: ["Tất cả nhóm lỗi", "Lỗi tài khoản", "Lỗi số điện thoại", "Lỗi hệ thống"],
+      errorOptions: ["Tất cả lỗi", "Không tìm thấy tài khoản Zalo", "Bị chặn", "Vượt hạn mức"],
+      retryCampaign: s.retryCampaign, setRetryCampaign: v => this.setState({ retryCampaign: v }),
+      retryGroup: s.retryGroup, setRetryGroup: v => this.setState({ retryGroup: v }),
+      retryError: s.retryError, setRetryError: v => this.setState({ retryError: v }),
+      exclude: s.exclude, toggleExclude: () => this.setState({ exclude: !s.exclude }),
+      dnsGroups,
+      totalFromSource: totalSource.toLocaleString("vi-VN"),
+      excludedCount: excluded.toLocaleString("vi-VN"),
+      willSendCount: Math.max(0, totalSource - excluded).toLocaleString("vi-VN"),
+      hourOptions: HOURS,
+      windowFrom: s.windowFrom, setWindowFrom: v => this.setState({ windowFrom: v }),
+      windowTo: s.windowTo, setWindowTo: v => this.setState({ windowTo: v }),
+      resetWindow: () => this.setState({ windowFrom: "08:00", windowTo: "20:00" }),
+      windowNote: nightRisk
+        ? "Giờ kết thúc phải sau giờ bắt đầu."
+        : "Chỉ cho phép gửi trong 06:00 – 22:00 để tránh gây spam & khiếu nại từ khách hàng. \n Ngoài khung giờ đã chọn, nếu chiến dịch còn thời hạn, những data chưa gửi  hệ thống sẽ gửi tiếp vào ngày hôm sau ",
+      windowNoteStyle: "margin-top:8px;font-size:12px;line-height:1.7;max-width:720px;white-space:pre-line;color:" + (nightRisk ? "var(--status-warning)" : "var(--text-secondary)") + ";",
+      windowBarStyle: "position:absolute;top:0;bottom:0;border-radius:8px;background:" + (nightRisk ? "var(--status-warning)" : "var(--brand-3)") +
+        ";left:" + (fromH / 24 * 100) + "%;width:" + (Math.max(0, toH - fromH) / 24 * 100) + "%;",
+      allowedBandStyle: "position:absolute;top:0;bottom:0;left:25%;width:66.667%;border-left:1px dashed var(--border-default);border-right:1px dashed var(--border-default);background:rgba(56,99,239,.05);",
+      editorRef: this.editorRef,
+      onEditorInput: () => this.saveEditor(),
+      onEditorClick: this.onEditorClick,
+      lockSelection: this.lockSelection,
+      keepSelection: (e) => e.preventDefault(),
+      hasSel: !!s.selText,
+      lockHint: s.selText ? "Khóa “" + (s.selText.length > 24 ? s.selText.slice(0, 24) + "…" : s.selText) + "”" : "Bôi đen nội dung rồi bấm để khóa",
+      lockBtnStyle: "cursor:pointer;transition:all 140ms var(--ease-standard);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:30px;padding:0 10px;font-size:13px;font-weight:500;" +
+        (s.selText
+          ? "color:#fff;background:#B45309;border:1px solid #B45309;box-shadow:0 0 0 3px rgba(180,83,9,.18);"
+          : "color:#92400E;background:" + this.lockTint() + ";border:1px solid #FDE68A;"),
+      lockedTerms: s.lockedTerms.map((t, i) => ({ key: i + t, label: t, unlock: () => this.unlockTerm(t) })),
+      lockedCount: s.lockedTerms.length,
+      hasLocked: s.lockedTerms.length > 0,
+      toastMsg: s.toast ? s.toast.msg : "",
+      hasToast: !!s.toast,
+      toastStyle: "position:fixed;left:50%;bottom:88px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:10px;padding:11px 16px;border-radius:8px;font-size:13px;font-weight:500;box-shadow:var(--shadow-md);color:#fff;background:" +
+        (s.toast && s.toast.kind === "warn" ? "var(--status-warning)" : "var(--slate-700, #1B2733)") + ";",
+      showPreview: s.variantCount !== 0,
+      hidePreview: s.variantCount === 0,
+      previewListStyle: "padding:6px 16px;flex:1;min-height:0;overflow:auto;display:" + (s.variantCount === 0 ? "none" : "block") + ";",
+      legendStyle: "flex-wrap:wrap;gap:20px;padding:14px 16px;border-top:1px solid var(--border-subtle);font-size:12px;color:var(--text-secondary);display:" + (s.variantCount === 0 ? "none" : "flex") + ";",
+      fmiTotalPct: s.distribution.reduce((a, r) => a + (parseFloat(r.pct) || 0), 0) + "%",
+      fmiTotalQty: s.distribution.reduce((a, r) => a + (parseInt(r.qty, 10) || 0), 0).toLocaleString("vi-VN"),
+      fmiUnbalanced: s.distribution.some(r => r.pct !== "") && s.distribution.reduce((a, r) => a + (parseFloat(r.pct) || 0), 0) !== 100,
+      fmiTotalStyle: "color:" + (s.distribution.reduce((a, r) => a + (parseFloat(r.pct) || 0), 0) === 100 ? "var(--status-success)" : "var(--status-warning)") + ";",
+      stop: (e) => e.stopPropagation(),
+      splitEvenly: () => {
+        const total = s.fmiSet ? 12480 : 0;
+        const n = s.distribution.length;
+        const base = Math.floor(100 / n);
+        this.setState({
+          distribution: s.distribution.map((r, i) => {
+            const pct = i === n - 1 ? 100 - base * (n - 1) : base;
+            return { ...r, pct: String(pct), qty: String(Math.round(total * pct / 100)) };
+          })
+        });
+      },
+      undo: () => document.execCommand("undo"),
+      redo: () => document.execCommand("redo"),
+      charCount: s.charCount,
+      varChips: ["Họ và tên", "Số điện thoại", "Giới tính", "Tên nhân viên", "Tên zalo"].map((label, i) => ({
+        key: i, label: "+ " + label, insert: () => this.insertVar(label)
+      })).concat([{ key: 99, label: "+ Thêm trường động ⌄", insert: () => this.insertVar("Trường động") }]),
+      perCustomer: s.variantCount === 0,
+      variantTotal: s.variantCount === 0 ? "riêng từng khách" : String(s.variantCount),
+      regenerate: () => this.setState({ seed: s.seed + 1 }),
+      advOpen: s.advOpen, toggleAdvanced: () => this.setState({ advOpen: !s.advOpen }),
+      advCaretStyle: "display:inline-flex;transition:transform 160ms var(--ease-standard);transform:rotate(" + (s.advOpen ? "180deg" : "0deg") + ");",
+      styleValue: s.styleValue, setStyleValue: v => this.setState({ styleValue: v }),
+      styleOptions: ["Thân thiện, gần gũi", "Chuyên nghiệp", "Ngắn gọn, súc tích", "Trang trọng"],
+      toneValue: s.toneValue, setToneValue: v => this.setState({ toneValue: v }),
+      toneOptions: ["Tích cực, lạc quan", "Trung lập", "Khẩn trương", "Nhiệt tình"],
+      autoFriend: s.autoFriend, toggleAutoFriend: () => this.setState({ autoFriend: !s.autoFriend }),
+      autoTag: s.autoTag, toggleAutoTag: () => this.setState({ autoTag: !s.autoTag }),
+      interval: s.interval, setInterval: this.set("interval"),
+      intervalUnit: s.intervalUnit, setIntervalUnit: v => this.setState({ intervalUnit: v }),
+      intervalUnits: ["Giây", "Phút", "Giờ"],
+
+      birthdayModes: ["Trước sinh nhật", "Đúng sinh nhật", "Sau sinh nhật"],
+      birthdayMode: s.birthdayMode,
+      setBirthdayMode: v => this.setState({ birthdayMode: v }),
+      birthdayNeedsOffset: s.birthdayMode !== "Đúng sinh nhật",
+      birthdayOffset: s.birthdayOffset,
+      setBirthdayOffset: this.set("birthdayOffset"),
+      incOffset: () => this.setState(st => ({ birthdayOffset: String(Math.min(60, (parseInt(st.birthdayOffset, 10) || 0) + 1)) })),
+      decOffset: () => this.setState(st => ({ birthdayOffset: String(Math.max(1, (parseInt(st.birthdayOffset, 10) || 1) - 1)) })),
+
+      onceDateLabel: sel ? String(sel.d).padStart(2, "0") + "/" + String(sel.m + 1).padStart(2, "0") + "/" + sel.y : "Chọn ngày",
+      dateTextStyle: "color:" + (sel ? "var(--text-body)" : "var(--text-secondary)") + ";",
+      dateFieldStyle: "height:45px;background:#fff;border-radius:4px;display:flex;align-items:center;gap:10px;padding:0 12px;cursor:pointer;border:1px solid " +
+        (s.calendarOpen ? "var(--brand-normal)" : "var(--border-default)") + ";",
+      calendarOpen: s.calendarOpen,
+      toggleCalendar: () => this.setState({ calendarOpen: !s.calendarOpen }),
+      calendarTitle: "Tháng " + (cal.m + 1) + " " + cal.y,
+      prevMonth: () => this.setState({ calMonth: cal.m === 0 ? { y: cal.y - 1, m: 11 } : { y: cal.y, m: cal.m - 1 } }),
+      nextMonth: () => this.setState({ calMonth: cal.m === 11 ? { y: cal.y + 1, m: 0 } : { y: cal.y, m: cal.m + 1 } }),
+      prevYear: () => this.setState({ calMonth: { y: cal.y - 1, m: cal.m } }),
+      nextYear: () => this.setState({ calMonth: { y: cal.y + 1, m: cal.m } }),
+      dowLabels: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"].map((label, i) => ({ key: i, label })),
+      calendarDays: cells.map(c => {
+        const isSel = !c.outside && sel && sel.y === cal.y && sel.m === cal.m && sel.d === c.n;
+        const isToday = !c.outside && today.getFullYear() === cal.y && today.getMonth() === cal.m && today.getDate() === c.n;
+        return {
+          key: c.i, n: c.n,
+          style: "height:34px;display:flex;align-items:center;justify-content:center;border-radius:4px;font-size:14px;cursor:pointer;color:" +
+            (c.outside ? "var(--slate-300, #C9CFD8)" : isSel ? "#fff" : "var(--text-body)") +
+            ";background:" + (isSel ? "var(--brand-normal)" : "transparent") +
+            ";border:1px solid " + (isToday && !isSel ? "var(--brand-normal)" : "transparent") + ";",
+          pick: () => { if (!c.outside) this.setState({ onceDate: { y: cal.y, m: cal.m, d: c.n } }); }
+        };
+      }),
+      pickToday: () => this.setState({
+        calMonth: { y: today.getFullYear(), m: today.getMonth() },
+        onceDate: { y: today.getFullYear(), m: today.getMonth(), d: today.getDate() }
+      }),
+      confirmDate: () => this.setState({ calendarOpen: false }),
+
+      freqOptions: ["Hàng ngày", "Hàng tuần", "Hàng tháng"],
+      freq: s.freq,
+      setFreq: v => this.setState({ freq: v, unitPickerOpen: false }),
+      freqHasPicker: s.freq !== "Hàng ngày",
+      freqPickerLabel: s.freq === "Hàng tháng" ? "Ngày" : "Thứ",
+      unitPlaceholder: s.freq === "Hàng tháng" ? "Chọn ngày trong tháng" : "Chọn thứ trong tuần",
+      unitPickerOpen: s.unitPickerOpen,
+      toggleUnitPicker: () => this.setState({ unitPickerOpen: !s.unitPickerOpen }),
+      unitFieldStyle: "min-height:45px;box-sizing:border-box;background:#fff;border-radius:4px;padding:6px 10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;align-content:center;cursor:pointer;border:1px solid " +
+        (s.unitPickerOpen ? "var(--brand-normal)" : "var(--border-default)") + ";",
+      selectedUnits: unitSet.filter(u => chosen.includes(u[0])).map(u => ({
+        key: u[0], short: u[0], remove: () => toggleUnit(u[0])
+      })),
+      noUnitSelected: chosen.length === 0,
+      unitOptions: unitSet.map(u => ({
+        key: u[0], label: u[1], on: chosen.includes(u[0]),
+        rowStyle: "display:flex;align-items:center;gap:12px;padding:9px 14px;cursor:pointer;color:var(--text-body);",
+        toggle: () => toggleUnit(u[0])
+      })),
+      allUnitsChecked: chosen.length === unitSet.length,
+      someUnitsChecked: chosen.length > 0 && chosen.length < unitSet.length,
+      toggleAllUnits: () => this.setState({ [chosenKey]: chosen.length === unitSet.length ? [] : unitSet.map(u => u[0]) }),
+      selectedUnitCount: chosen.length,
+
+      rangeFrom: s.rangeFrom, setRangeFrom: this.set("rangeFrom"),
+      rangeTo: s.rangeTo, setRangeTo: this.set("rangeTo"),
+      repeatEvery: s.repeatEvery, setRepeatEvery: this.set("repeatEvery"),
+      repeatUnit: s.repeatUnit, setRepeatUnit: v => this.setState({ repeatUnit: v }),
+      repeatUnits: ["Phút", "Giờ", "Ngày"]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
